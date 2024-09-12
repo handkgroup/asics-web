@@ -10,7 +10,6 @@
 
 
 header{
-    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
@@ -18,18 +17,24 @@ header{
 header nav {
     width: 100%;    
     display: flex;
-    padding: 0 40px;
+    padding: 12px 40px;
     align-items: center;
     justify-content: space-between;
+}
+header nav img{    
+    width: 155px;
 }
 header nav ul {    
     display: flex;
     align-items: center;
     gap: 22px;
 }
-header nav ul a{    
+
+header nav ul a{   
+    font-family: var(--font-family); 
     color:var(--text-color);
     font-size: var(--body-font-size);
+    font-weight: var(--bold-weight);
 }
 
 
