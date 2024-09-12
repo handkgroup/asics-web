@@ -2,10 +2,12 @@
 
 /* learn-more-start */
 .learn-more{
+    display: grid;
+    gap: 2.8rem;
     background: var(--primary-color);
     padding: 6rem 12rem 6rem 12rem;
-
 }
+
 .lm-title{
     color: #ffffff;
     text-align: center;
@@ -16,6 +18,37 @@
     line-height: 160%;
 }
 
+.lm-cta{
+    background-color: #ffffff;
+    display: flex;
+    padding: 4rem 9rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 6rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.lm-cta-left img{
+    max-width: 11.7rem;
+}
+
+.lm-cta-right{
+    display: grid;
+    gap: 3rem;
+}
+
+.main-h1{
+color: var(--primary-color);
+text-align: center;
+font-family: "Noto Sans JP";
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 700;
+line-height: 160%;
+}
 /* learn-more-end */
 
 /* footer-start*/
