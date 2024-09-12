@@ -104,3 +104,21 @@
     background-color: var(--hover-dark);
     transform: scale(1.05);
 }
+
+
+.sct_1 .bottom_sct_1 {
+    display: flex;
+    gap: 60px;
+}
+
+.sct_1 .bottom_sct_1 .bottom_sct_1_left{
+    width: 50%;
+}
+
+.sct_1 .bottom_sct_1 .bottom_sct_1_right{
+    width: 50%;
+}
+
+.sct_1 .bottom_sct_1 .bottom_sct_1_right img{
+    width: 50%;
+}
