@@ -3,9 +3,8 @@
 
 .sct_1{
     background-color: var(--background-color);
-    max-width: 1440px;
     width: 100%;
-    margin: 74.5px auto 0;
+    margin: 7.45rem auto 0;
     position: relative;
     overflow: hidden;
 }
