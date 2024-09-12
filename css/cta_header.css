@@ -1,0 +1,76 @@
+.h-cta-main {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 27rem; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.2rem 10rem; 
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.20);
+  }
+  
+  .h-cta-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .h-cta-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .h-cta-paths {
+    gap: 0.4rem; 
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .h-cta-paths p {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 1.4rem; 
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  
+  .h-cta-paths svg {
+    width: 1.6rem; 
+    height: 1.6rem; 
+  }
+  
+  .h-cta-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .h-cta-title h1 {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 4rem; 
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  
+  @media  (max-width: 768px) {
+    .h-cta-main {
+        padding: 1.2rem 5rem; 
+      }
+  }
