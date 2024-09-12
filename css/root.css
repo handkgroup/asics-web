@@ -1,0 +1,27 @@
+:root {
+    /* Color Variables */
+    --primary-color: #001E62;
+    --secondary-color: #F07B0F;
+    --background-color: #FFFFFF;
+    --color-btn: #E37611;
+    --text-color: ;
+  
+    /* Font Variables */
+    --font-family: "Noto Sans JP";
+    --heading-font-size: 48px;
+    --body-font-size: 24px;
+    --small-font-size: 14px;
+  
+    /* Spacing Variables */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+  
+    /* Border Radius */
+    --border-radius: 5px;
+  
+    /* Animation Variables */
+    --transition-speed: 0.3s;
+    --animation-ease: ease-in-out;
+  }
+  
