@@ -24,4 +24,23 @@
     --transition-speed: 0.3s;
     --animation-ease: ease-in-out;
   }
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.container{
+  padding: 60px 200px;
+}
   
