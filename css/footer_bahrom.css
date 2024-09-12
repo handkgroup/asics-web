@@ -4,6 +4,7 @@
 .learn-more{
     background: var(--primary-color);
     padding: 6rem 12rem 6rem 12rem;
+
 }
 .lm-title{
     color: #ffffff;
@@ -14,6 +15,7 @@
     font-weight: 700;
     line-height: 160%;
 }
+
 /* learn-more-end */
 
 /* footer-start*/
@@ -45,7 +47,7 @@ footer {
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    width: 90%; 
+    width: 70%; 
     justify-content: flex-end;
     gap: 1rem;
 }
