@@ -25,10 +25,14 @@
     --transition-speed: 0.3s;
     --animation-ease: ease-in-out;
 
-    /* Animation Weight */
+    /* font Weight */
     --bold-weight: 700;
     --mid-weight: 500;
     --regular-weight: 400;
+
+    /* hover  */
+    --hover-dark:#faa759;
+    --hover-light :#ffcea0;
   }
 
   *{

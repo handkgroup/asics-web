@@ -38,12 +38,17 @@ header nav ul a{
     color:var(--text-color);
     font-size: var(--body-font-size);
     font-weight: var(--bold-weight);
+    scroll-behavior: smooth;
 }
 
 header nav ul .btn_1 {   
     border: 2px solid var(--color-btn);
     border-radius: var(--border-radius);
     padding: 12px 24px;
+}
+header nav ul .btn_1:hover {   
+    background-color: var(--hover-light);
+    transform: scale(1.05);
 }
 
 header nav ul .btn_1 a{   
@@ -57,6 +62,11 @@ header nav ul .btn_2 {
     background: var(--color-btn);
     border-radius: var(--border-radius);
     padding: 12px 24px;
+}
+
+header nav ul .btn_2:hover {   
+    background-color: var(--hover-dark);
+    transform: scale(1.05);
 }
 
 header nav ul .btn_2 a{   
