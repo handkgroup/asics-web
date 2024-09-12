@@ -1,7 +1,7 @@
 @import url('./root.css');
 
 footer {
-    background-color: #f1d2d2; /* White background */ 
+    background-color: #ffffff; 
 }
 
 .footer-container {
@@ -9,44 +9,85 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     width: 100%;
-    padding: 60px 120px 0 120px;
+    padding: 60px 138px 0 138px;
+    gap: 40px;
 }
+
 .footer-content{
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content:space-between;
+    width: 100%;
     gap: 20%;
 }
 
 .footer-logo img {
     max-width: 150px; 
-    margin-bottom: 20px; /* Space below the logo */
 }
 
 .footer-links {
-    margin-bottom: 20px;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    width: 900px; 
+    width: 90%; 
+    justify-content: flex-end;
+    /* line-height: 20px; */
+    gap: 10px;
 }
 
 .footer-links a {
-    color: #000000; /* Black text */
-    text-decoration: none; /* Remove underline */
-    margin: 0 10px; /* Space between links */
-    font-size: 16px; /* Font size */
+    color: var(--black, #09122B);
+    text-decoration: none; 
+    margin: 0 10px; 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 25.6px */ 
 }
 
-.footer-links a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
+/* .footer-links a:hover {
+    text-decoration: underline; 
+} */
 
 .footer-copyright {
-    color: #000000; /* Black text */
-    font-size: 14px; /* Font size */
-    
+    color: var(--black, #09122B);
+    padding: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
 }
 
+/* Mobile Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+        width: 100%;
+        padding: 0; /* Remove side padding */
+        gap: 20px; /* Add spacing between logo and links */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    .footer-links {
+        justify-content: center; /* Center links */
+        width: 100%; /* Full width */
+        margin-top: 20px; /* Add space above links */
+        text-align: center; /* Center text */
+        padding: 0; /* Remove padding */
+    }
+
+    .footer-links a {
+        margin: 5px 0; /* Space out links vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 30px 10px; /* Reduce padding */
+        gap: 20px; /* Reduce gap */
+    }
+
+    .footer-logo img {
+        max-width: 120px; /* Smaller logo size */
+    }
+}
