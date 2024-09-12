@@ -1,2 +1,12 @@
 @import url('./root.css');
 
+
+.sct_1{
+    background-color: var(--background-color);
+}
+
+.sct_1 .main_bg_sct_1{
+    position: relative;
+    width: 1300px;
+    right: 0;
+}
