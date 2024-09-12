@@ -1,0 +1,36 @@
+.case-filter-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    margin: 0 auto;
+}
+
+.case-filter-main a {
+    display: flex;
+    padding: 8px 24px;
+    align-items: center;
+    gap: 10px;
+    color: var(--Primary-color, #001E62);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    text-decoration: none;
+}
+
+.case-filter-main a:hover {
+    background-color: #C5C5C5;
+}
+
+.case-filter-main a:active {
+    background: var(--Primary-color, #001E62);
+    color: var(--White, #FFF);
+}
+
+.case-filter-main a.active {
+    background: var(--Primary-color, #001E62);
+    color: var(--White, #FFF);
+}
+
+
