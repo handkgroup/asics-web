@@ -1,0 +1,41 @@
+@import url('./root.css');
+
+footer {
+    background-color: #ffffff; /* White background */
+    padding: 30px 0; /* Padding around the content */
+    border-top: 5px solid #002d72; /* Blue top border */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjust logo size */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+.footer-links {
+    margin-bottom: 20px; /* Space below the links */
+}
+
+.footer-links a {
+    color: #000000; /* Black text */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+    font-size: 16px; /* Font size */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-copyright {
+    color: #000000; /* Black text */
+    font-size: 14px; /* Font size */
+    margin-top: 10px; /* Space above copyright */
+}
