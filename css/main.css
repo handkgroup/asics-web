@@ -5,8 +5,10 @@
     background-color: var(--background-color);
 }
 
-.sct_1 .main_bg_sct_1{
-    position: relative;
+.sct_1 .top_sct_1{
     width: 1300px;
-    right: 0;
+}
+
+.sct_1 .main_bg_sct_1{
+    width: 100%;
 }
