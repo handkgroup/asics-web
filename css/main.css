@@ -15,7 +15,7 @@
 }
 
 .sct_1 .main_bg_sct_1{
-    width: 1300px;
+    width: 90%;
     display: block;
     position: absolute;
     top: 0;
@@ -28,15 +28,15 @@
 .sct_1 .top_sct_1 .sct_1_text{
     position: relative;
     z-index: 1;
-    top: 134px;
-    left: 180px;
+    top: 20%;
+    left: 12%;
 }
 
 .sct_1 .top_sct_1 .sct_1_text .parallelogram{
     width: fit-content;
     background-image: linear-gradient(to right, #0B1F4E, #0055B8);
     transform: skew(-25deg); 
-    padding: 15px 60px;
+    padding: 1.5rem 6rem;
 }
 
 .sct_1 .top_sct_1 .sct_1_text .parallelogram p{
@@ -55,8 +55,8 @@
 .sct_1 .top_sct_1 .sct_1_text .parallelogram .logo_sct_1{
     position: absolute;
     transform: skew(25deg);
-    top: -50px;
-    right: -10px;
+    top: -5rem;
+    right: -1rem;
 }
 
 .sct_1 .top_sct_1 .sct_1_text h5{
@@ -66,12 +66,41 @@
     font-family: var(--font-family);
     font-size: var(--large-font-size);
     font-weight: var(--max_weight);
-    margin: 43px 0;
+    margin: 4.3rem 0  6.7rem;
 }
 
 .sct_1 .top_sct_1 .sct_1_text h5 span{
-    padding-left: 26px;
+    padding-left: 2.6rem;
     display: block;
-    font-size: 30px;
+    font-size: 3rem;
 }
 
+
+.sct_1 .top_sct_1 .sct_1_text .sct_1_btn .sct_1_btn1 {   
+    border: .2rem solid var(--color-btn);
+    border-radius: var(--border-radius);
+    padding: 1.2rem 6.4rem;
+    font-family: var(--font-family); 
+    color:var(--color-btn);
+    font-size: var(--norm-font-size);
+    font-weight: var(--bold-weight);
+}
+.sct_1 .top_sct_1 .sct_1_text .sct_1_btn .sct_1_btn1:hover {   
+    background-color: var(--hover-light);
+    transform: scale(1.05);
+}
+
+.sct_1 .top_sct_1 .sct_1_text .sct_1_btn .sct_1_btn2 {   
+    background: var(--color-btn);
+    border-radius: var(--border-radius);
+    padding: 1.2rem 6.4rem;
+    font-family: var(--font-family); 
+    color:var(--text-color-def);
+    font-size: var(--norm-font-size);
+    font-weight: var(--bold-weight);
+}
+
+.sct_1 .top_sct_1 .sct_1_text .sct_1_btn .sct_1_btn2:hover {   
+    background-color: var(--hover-dark);
+    transform: scale(1.05);
+}
