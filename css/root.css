@@ -5,6 +5,7 @@
     --background-color: #FFFFFF;
     --color-btn: #E37611;
     --text-color: #202020;
+    --text-color-def: #fff;
   
     /* Font Variables */
     --font-family: "Noto Sans JP";
@@ -18,7 +19,7 @@
     --spacing-large: 24px;
   
     /* Border Radius */
-    --border-radius: 50%;
+    --border-radius:400px;
   
     /* Animation Variables */
     --transition-speed: 0.3s;
