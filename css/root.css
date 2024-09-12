@@ -23,6 +23,11 @@
     /* Animation Variables */
     --transition-speed: 0.3s;
     --animation-ease: ease-in-out;
+
+    /* Animation Weight */
+    --bold-weight: 700;
+    --mid-weight: 500;
+    --regular-weight: 400;
   }
 
   *{
@@ -33,14 +38,11 @@
     text-decoration: none;
 }
 
-html{
+
+.container{
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-}
-
-
-.container{
-  padding: 60px 200px;
+    padding: 60px 200px;
 }
   
