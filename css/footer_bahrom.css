@@ -10,15 +10,27 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
+    padding: 60px 120px 0 120px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 20%;
 }
 
 .footer-logo img {
-    max-width: 150px; /* Adjust logo size */
+    max-width: 150px; 
     margin-bottom: 20px; /* Space below the logo */
 }
 
 .footer-links {
-    margin-bottom: 20px; /* Space below the links */
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px; 
 }
 
 .footer-links a {
@@ -35,6 +47,6 @@ footer {
 .footer-copyright {
     color: #000000; /* Black text */
     font-size: 14px; /* Font size */
-    margin-top: 10px; /* Space above copyright */
+    margin-top: 40px; /* Space above copyright */
 }
 
