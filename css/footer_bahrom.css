@@ -1,9 +1,7 @@
 @import url('./root.css');
 
 footer {
-    background-color: #ffffff; /* White background */
-    padding: 30px 0; /* Padding around the content */
-    border-top: 5px solid #002d72; /* Blue top border */
+    background-color: #f1d2d2; /* White background */ 
 }
 
 .footer-container {
