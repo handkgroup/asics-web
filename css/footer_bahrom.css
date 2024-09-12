@@ -1,5 +1,22 @@
 @import url('./root.css');
 
+/* learn-more-start */
+.learn-more{
+    background: var(--primary-color);
+    padding: 6rem 12rem 6rem 12rem;
+}
+.lm-title{
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+/* learn-more-end */
+
+/* footer-start*/
 footer {
     background-color: #ffffff; 
 }
