@@ -113,10 +113,11 @@
     background-color: var(--background-color);
     width: 100%;
     display: flex;
-    gap: 6rem;
+    justify-content: space-between;
 }
 
 .sct_2 .sct_2_left{
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -126,13 +127,14 @@
     display: flex;
     gap: 2.3rem;
     font-family:var(--font-family);
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: var(--bold-weight);
 }
 
 .sct_2 .sct_2_left h6 p{
     display: block; 
     color: var(--primary-color);
+    font-weight: 700;
 }
 
 .sct_2 .sct_2_left h6 span{
@@ -149,37 +151,59 @@
     align-items: flex-end;
 }
 
-.sct_2 .sct_2_left p{
+.sct_2 .sct_2_left .sct_2_txt{
     color: var(--Black, #000);
     font-family: var(--font-family);
-    font-size: var(--norm-font-size);  
-    font-weight: var(--regular-weight);
+    font-size: 2.2rem;  
+    font-weight: var(--small-font-size);
 }
 
-
-
-
-
-.sct_1 .bottom_sct_1 .bottom_sct_1_right{
-    width: 50%;
-    height: 60rem;
+.sct_2 .sct_2_right{
+    width: 45%;
     position: relative;
 }
 
-.sct_1 .bottom_sct_1 .bottom_sct_1_right img{
+.sct_2 .sct_2_right img{
     position: absolute;
-    width: 70%;
-    height: 70%;
+    width: 65%;
     height: auto;
 }
 
-.sct_1 .bottom_sct_1 .bottom_sct_1_right img:nth-child(1){
+.sct_2 .sct_2_right img:nth-child(1){
     bottom: 0;
     left: 0;
 }
 
-.sct_1 .bottom_sct_1 .bottom_sct_1_right img:nth-child(2){
+.sct_2 .sct_2_right img:nth-child(2){
     top: 0;
     right: 0;
     z-index: 3;
 }
+
+/* <!-- ====================serction_3=============================== -->  */
+
+.sct_3{
+
+}
+
+
+.sct_3 h6{
+    color: var(--primary-color);
+    text-align: center;
+    font-family:var( --font-family);
+    font-size: 5rem;
+    font-weight: var(--bold-weight);
+}
+
+.sct_3 h6 span{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
