@@ -1,17 +1,13 @@
 @import url('./root.css');
 
-
+/* <!-- ====================serction_1=============================== --> */
 .sct_1{
     background-color: var(--background-color);
     width: 100%;
     margin: 7.45rem auto 0;
     position: relative;
     overflow: hidden;
-}
-
-.sct_1 .top_sct_1{
-    width: 100%;
-    height: 100vh;
+    height: 110vh;
 }
 
 .sct_1 .main_bg_sct_1{
@@ -25,126 +21,138 @@
     border-radius: 0 0 0 var(--border-radius); 
 }
 
-.sct_1 .top_sct_1 .sct_1_text{
+.sct_1 .sct_1_text{
     position: relative;
     z-index: 1;
     top: 20%;
     left: 12%;
 }
 
-.sct_1 .top_sct_1 .sct_1_text .parallelogram{
+.sct_1 .sct_1_text .parallelogram{
     width: fit-content;
     background-image: linear-gradient(to right, #0B1F4E, #0055B8);
     transform: skew(-25deg); 
     padding: 1.5rem 6rem;
 }
 
-.sct_1 .top_sct_1 .sct_1_text .parallelogram p{
+.sct_1 .sct_1_text .parallelogram p{
     transform: skew(25deg); 
     color: var(--text-color-def);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: var(--font-family);
-    font-size: var(--norm-font-size);
+    font-size:3.4rem;
     font-weight: var(--bold-weight);
 }
 
-.sct_1 .top_sct_1 .sct_1_text p span{
+.sct_1  .sct_1_text p span{
     display: block;
 }
 
-.sct_1 .top_sct_1 .sct_1_text .parallelogram .logo_sct_1{
+.sct_1 .sct_1_text .parallelogram .logo_sct_1{
     position: absolute;
+    width: 15%;
     transform: skew(25deg);
-    top: -5rem;
+    top: -6rem;
     right: -1rem;
 }
 
-.sct_1 .top_sct_1 .sct_1_text h5{
+.sct_1  .sct_1_text h5{
     color: var(--text-color-def);
     font-feature-settings: 'liga' off, 'clig' off;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: var(--font-family);
-    font-size: var(--large-font-size);
+    font-size: 6.5rem;
     font-weight: var(--max_weight);
-    margin: 4.3rem 0  6.7rem;
+    margin: 9.5rem 0  10rem;
 }
 
-.sct_1 .top_sct_1 .sct_1_text h5 span{
-    padding-left: 2.6rem;
+.sct_1 .sct_1_text h5 span{
+    padding-left: 5rem;
     display: block;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
+.sct_1  .sct_1_text .sct_1_btn{
+    display: flex;
+    gap: 3rem;
+}
 
-.sct_1 .top_sct_1 .sct_1_text .sct_1_btn .sct_1_btn1 {   
-    border: .2rem solid var(--color-btn);
+.sct_1  .sct_1_text .sct_1_btn .sct_1_btn1 {   
+    border: .3rem solid var(--color-btn);
     border-radius: var(--border-radius);
     padding: 1.2rem 6.4rem;
     font-family: var(--font-family); 
     color:var(--color-btn);
-    font-size: var(--norm-font-size);
+    font-size: 4rem;
     font-weight: var(--bold-weight);
+    background-color: #fff;
 }
-.sct_1 .top_sct_1 .sct_1_text .sct_1_btn .sct_1_btn1:hover {   
+.sct_1  .sct_1_text .sct_1_btn .sct_1_btn1:hover {   
     background-color: var(--hover-light);
     transform: scale(1.05);
 }
 
-.sct_1 .top_sct_1 .sct_1_text .sct_1_btn .sct_1_btn2 {   
+.sct_1 .sct_1_text .sct_1_btn .sct_1_btn2 {   
     background: var(--color-btn);
     border-radius: var(--border-radius);
     padding: 1.2rem 6.4rem;
     font-family: var(--font-family); 
     color:var(--text-color-def);
-    font-size: var(--norm-font-size);
+    font-size: 4rem;
     font-weight: var(--bold-weight);
 }
 
-.sct_1 .top_sct_1 .sct_1_text .sct_1_btn .sct_1_btn2:hover {   
+.sct_1 .sct_1_text .sct_1_btn .sct_1_btn2:hover {   
     background-color: var(--hover-dark);
     transform: scale(1.05);
 }
 
+/* <!-- ====================serction_2=============================== --> */
 
-.sct_1 .bottom_sct_1 {
+.sct_2 {
+    background-color: var(--background-color);
     width: 100%;
-    height: 47rem;
     display: flex;
-    gap: 60px;
+    gap: 6rem;
 }
 
-.sct_1 .bottom_sct_1 .bottom_sct_1_left{
-    width: 50%;
+.sct_2 .sct_2_left{
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-.sct_1 .bottom_sct_1 .bottom_sct_1_left h6 {
+.sct_2 .sct_2_left h6 {
     display: flex;
-    gap: 23px;
-    color: var(--primary-color);
+    gap: 2.3rem;
     font-family:var(--font-family);
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: var(--bold-weight);
 }
-.sct_1 .bottom_sct_1 .bottom_sct_1_left h6 span{
+
+.sct_2 .sct_2_left h6 p{
     display: block; 
+    color: var(--primary-color);
 }
 
-.sct_1 .bottom_sct_1 .bottom_sct_1_left h6 .top{
+.sct_2 .sct_2_left h6 span{
+    display: block; 
+    color: var(--primary-color);
+}
+
+.sct_2 .sct_2_left h6 .top{
     display: flex;
     align-items: flex-start;
 }
-.sct_1 .bottom_sct_1 .bottom_sct_1_left h6 .bottom{
+.sct_2 .sct_2_left h6 .bottom{
     display: flex;
     align-items: flex-end;
 }
 
-.sct_1 .bottom_sct_1 .bottom_sct_1_left p{
+.sct_2 .sct_2_left p{
     color: var(--Black, #000);
     font-family: var(--font-family);
-    font-size: 1.6rem;  
+    font-size: var(--norm-font-size);  
     font-weight: var(--regular-weight);
 }
 
@@ -154,20 +162,24 @@
 
 .sct_1 .bottom_sct_1 .bottom_sct_1_right{
     width: 50%;
+    height: 60rem;
     position: relative;
 }
 
 .sct_1 .bottom_sct_1 .bottom_sct_1_right img{
     position: absolute;
-    width: 50%;
+    width: 70%;
+    height: 70%;
+    height: auto;
 }
 
 .sct_1 .bottom_sct_1 .bottom_sct_1_right img:nth-child(1){
-    top: 0;
+    bottom: 0;
     left: 0;
 }
 
 .sct_1 .bottom_sct_1 .bottom_sct_1_right img:nth-child(2){
-    bottom: 0;
+    top: 0;
     right: 0;
+    z-index: 3;
 }
