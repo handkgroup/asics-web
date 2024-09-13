@@ -22,10 +22,9 @@
     background-color: #ffffff;
     display: flex;
     padding: 4rem 9rem;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    gap: 6rem;
+    justify-content: space-between;
+    gap: 2rem;
     align-self: stretch;
     flex-wrap: wrap;
     border-radius: 20px;
@@ -147,7 +146,36 @@ footer {
 }
 
 /* Mobile Design */
+@media (max-width: 1300px) {
+    .lm-cta{
+       
+        padding: 4rem 9rem;
+        justify-content: space-around;
+        /* gap: 6rem; */
+        align-self: stretch;
+        /* flex-wrap: wrap; */
+        border-radius: 20px;
+    }
+}
+
 @media (max-width: 768px) {
+    .learn-more{
+        display: grid;
+        gap: 2.8rem;
+        background: var(--primary-color);
+        padding: 3rem 6rem 3rem 6rem;
+    }
+
+    .lm-cta{
+       
+        padding: 4rem 9rem;
+        justify-content: center;
+        /* gap: 6rem; */
+        align-self: stretch;
+        /* flex-wrap: wrap; */
+        border-radius: 20px;
+    }
+
     .footer-content {
         flex-direction: column; 
         align-items: center; 
@@ -171,6 +199,42 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .learn-more{
+        display: grid;
+        gap: 2.8rem;
+        background: var(--primary-color);
+        padding: 2rem 5rem 2rem 5rem;
+    }
+
+    .lm-cta{
+        background-color: #ffffff;
+        display: flex;
+        padding: 1rem 2rem;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+        align-self: stretch;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+
+    .lm-cta-right button {
+        background-color: #FF8C00;
+        color: #ffffff; 
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 2rem 6rem;
+        border: none;
+        border-radius: 50px; 
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        justify-content: center; 
+        align-items: center; 
+        width: fit-content;
+        
+    }
+
     .footer-container {
         padding: 30px 10px; 
         gap: 20px; 
