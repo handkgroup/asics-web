@@ -1,0 +1,92 @@
+.achh-about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Provides space between left and right content */
+    gap: 2rem; /* Gap between left and right sections */
+}
+
+/* Left section */
+.achh-left {
+    flex: 1; /* Left section takes up available space */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+/* Right section (sticky card) */
+.achh-right {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 2rem; /* Distance from the top */
+    width: 300px;
+    padding: 2.4rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -1px 0px 16px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.achh-right button {
+
+    background-color: #FF8C00;
+    color: #ffffff; 
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: .5rem 90px;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center; 
+    align-items: center; 
+    width: fit-content;
+    
+}
+
+/* Title styling */
+.main-h1 {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 160%;
+    gap: .8rem;
+}
+
+/* Circle list styling */
+.circle-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: .4rem;
+}
+
+.circle-list li {
+    width: .5rem;
+    height: .5rem;
+    background-color: #FF8C00;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .achh-about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achh-right {
+        position: relative; /* Disable sticky behavior on small screens */
+        width: 100%;
+    }
+}
