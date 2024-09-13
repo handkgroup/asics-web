@@ -1,12 +1,9 @@
-
-
-.container-case-page{
+.container-case-page {
     width: 100%;
     margin: 0 auto;
     padding: 6rem 20rem 0 20rem;
     max-width: 144rem;
-  }
-
+}
 
 /* Case list filter links stars*/
 
@@ -50,17 +47,13 @@
 
 /* Case list cards start */
 
-
 .case-list-main {
     display: grid;
-
     /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     box-sizing: border-box;
     padding-top: 4rem;
-
-    
 }
 
 .case-card {
@@ -68,11 +61,9 @@
     flex-direction: column;
     overflow: hidden;
     background: #fff;
-
     background: var(--White, #FFF);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 5px 0px 0px 0px;
-
 }
 
 .image-box {
@@ -94,15 +85,13 @@
     border-radius: 5px 0px 3px 0px;
     border: 1px solid var(--Primary-color, #001E62);
     background: var(--White, #FFF);
-
     top: 0;
     left: 0;
     color: var(--Deep-Sapphire---Primary-950, var(--Primary-color, #001E62));
     text-align: center;
-
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 160%; 
+    line-height: 160%;
     margin: 0;
 }
 
@@ -123,59 +112,92 @@
 
 .text-box p {
     color: var(--Black, #000);
-
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; 
+    line-height: 160%;
 }
-@media (max-width: 1200px) {
 
-    .container-case-page{
+@media (max-width: 1200px) {
+    .container-case-page {
         padding: 6rem 10rem 0 10rem;
     }
 }
 
-@media  (max-width: 1024px) {
-
-    .case-list-main {   
-        grid-template-columns: repeat(2, 1fr);   
+@media (max-width: 1024px) {
+    .case-list-main {
+        grid-template-columns: repeat(2, 1fr);
     }
-
     .image-box img {
         max-height: 20rem;
     }
+}
 
-  }
-  
-  @media (max-width: 768px) {
- 
-    .case-list-main {   
-        grid-template-columns: repeat(1, 1fr);   
+@media (max-width: 768px) {
+    .case-list-main {
+        grid-template-columns: repeat(1, 1fr);
     }
-
     .image-box img {
         max-height: 30rem;
     }
-  }
-  
-  @media (max-width: 470px) {
-    .container-case-page{
+}
+
+@media (max-width: 470px) {
+    .container-case-page {
         padding: 5rem 5rem 0 5rem;
     }
-
-    .case-list-main {   
-        grid-template-columns: repeat(1, 1fr);   
+    .case-list-main {
+        grid-template-columns: repeat(1, 1fr);
     }
-
     .image-box img {
         max-height: 22rem;
     }
-    
-  }
-  
-  @media (max-width: 320px) {
-    
-  }
+}
+
+@media (max-width: 320px) {}
 
 /* Case list cards ends */
+
+/* Case list pagination start */
+
+.case-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+}
+
+.case-pagination a {
+    display: flex;
+    padding: .4rem .8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 3.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: var(--Primary-color, var(--Primary-color, #001E62));
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.case-pagination a:hover {
+    background-color: #C5C5C5;
+}
+
+.case-pagination a.active , .case-pagination a.active svg path {
+    background: var(--Primary-color, #001E62);
+    color: var(--Primary-color, var(--Primary-color, #fff));
+    fill: #FFF;
+}
+
+
+/* Case list pagination start */
