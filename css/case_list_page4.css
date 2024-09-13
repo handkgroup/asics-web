@@ -1,9 +1,12 @@
+/* Case list filter links stars*/
+
 .case-filter-main {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
     align-self: stretch;
     margin: 0 auto;
+    padding-bottom: 0;
 }
 
 .case-filter-main a {
@@ -33,4 +36,87 @@
     color: var(--White, #FFF);
 }
 
+/* Case list filter links end */
 
+/* Case list cards start */
+
+
+.case-list-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(332px, 1fr));
+    gap: 20px;
+    box-sizing: border-box;
+    padding-top: 4rem;
+
+    
+}
+
+.case-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background: #fff;
+
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 0px 0px 0px;
+
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    max-height: 185px;
+    display: block;
+    object-fit: cover;
+}
+
+.image-box p {
+    position: absolute;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px 0px 3px 0px;
+    border: 1px solid var(--Primary-color, #001E62);
+    background: var(--White, #FFF);
+
+    top: 0;
+    left: 0;
+    color: var(--Deep-Sapphire---Primary-950, var(--Primary-color, #001E62));
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%; 
+    margin: 0;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    gap: 12px;
+}
+
+.text-box img {
+    width: auto;
+    max-width: fit-content;
+    height: 28px;
+}
+
+.text-box p {
+    color: var(--Black, #000);
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; 
+}
+
+/* Case list cards ends */

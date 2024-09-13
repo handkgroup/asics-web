@@ -1,3 +1,5 @@
+
+/* Header CTA stars */
 .h-cta-main {
     position: relative;
     overflow: hidden;
@@ -75,3 +77,5 @@
         padding: 1.2rem 5rem; 
       }
   }
+
+  /* Header CTA ends */
