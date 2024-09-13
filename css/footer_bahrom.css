@@ -36,26 +36,60 @@
 }
 
 .lm-cta-right{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 3rem;
 }
 
 .main-h1{
-color: var(--primary-color);
-text-align: center;
-font-family: "Noto Sans JP";
-font-size: 2.4rem;
-font-style: normal;
-font-weight: 700;
-line-height: 160%;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    gap: .8rem;
 }
 
-.lm-cta-right button{
+.circle-list {
     display: flex;
+    justify-content: center; 
+    list-style: none; 
+    padding: 0;
+    gap: .4rem; 
+}
+
+.circle-list li {
+    width: .5rem; 
+    height: .5rem; 
+    background-color: #FF8C00;
+    border-radius: 50%; 
+    display: inline-block; 
+}
+
+.lm-cta-right button {
+    background-color: #FF8C00;
+    color: #ffffff; 
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
     padding: 12px 90px;
-    justify-content: center;
-    align-items: center;
-    /* gap: 10px; */
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center; 
+    align-items: center; 
+    width: fit-content;
+    
+}
+
+.lm-cta-right button:hover {
+    background-color: #d2964d; 
 }
 /* learn-more-end */
 
@@ -116,33 +150,33 @@ footer {
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column; 
-        align-items: center; /* Center content */
+        align-items: center; 
         width: 100%;
-        padding: 0; /* Remove side padding */
-        gap: 20px; /* Add spacing between logo and links */
-        box-sizing: border-box; /* Include padding in width */
+        padding: 0; 
+        gap: 20px; 
+        box-sizing: border-box; 
     }
 
     .footer-links {
-        justify-content: center; /* Center links */
-        width: 100%; /* Full width */
-        margin-top: 20px; /* Add space above links */
-        text-align: center; /* Center text */
-        padding: 0; /* Remove padding */
+        justify-content: center; 
+        width: 100%; 
+        margin-top: 20px; 
+        text-align: center; 
+        padding: 0; 
     }
 
     .footer-links a {
-        margin: 5px 0; /* Space out links vertically */
+        margin: 5px 0; 
     }
 }
 
 @media (max-width: 480px) {
     .footer-container {
-        padding: 30px 10px; /* Reduce padding */
-        gap: 20px; /* Reduce gap */
+        padding: 30px 10px; 
+        gap: 20px; 
     }
 
     .footer-logo img {
-        max-width: 120px; /* Smaller logo size */
+        max-width: 120px; 
     }
 }
