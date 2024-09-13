@@ -50,18 +50,13 @@ html {
   font-size: 62.5%;
   font-family: "Noto Sans JP";
 }
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 6rem 20rem;
+}
 
-@media (min-width: 1024px) {
-  html {
-    font-size: 62.5%;
-  }
-  .container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 6rem 10rem;
-}
-  
-}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   html {
@@ -70,13 +65,18 @@ html {
   .container{
     width: 100%;
     margin: 0 auto;
-    padding: 3rem 5rem;
-}
+    padding: 6rem 10rem;
+  }
 }
 
 @media (min-width: 470px) and (max-width: 768px) {
   html {
     font-size: 50%;
+  }
+  .container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem 5rem;
   }
 }
 
@@ -92,9 +92,5 @@ html {
   }
 }
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 6rem 20rem;
-}
+
   

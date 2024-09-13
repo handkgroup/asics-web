@@ -1,3 +1,13 @@
+
+
+.container-case-page{
+    width: 100%;
+    margin: 0 auto;
+    padding: 6rem 20rem 0 20rem;
+    max-width: 144rem;
+  }
+
+
 /* Case list filter links stars*/
 
 .case-filter-main {
@@ -43,7 +53,9 @@
 
 .case-list-main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(332px, 1fr));
+
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     box-sizing: border-box;
     padding-top: 4rem;
@@ -54,7 +66,6 @@
 .case-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ddd;
     overflow: hidden;
     background: #fff;
 
@@ -71,7 +82,7 @@
 .image-box img {
     width: 100%;
     height: auto;
-    max-height: 185px;
+    max-height: 18.5rem;
     display: block;
     object-fit: cover;
 }
@@ -89,7 +100,7 @@
     color: var(--Deep-Sapphire---Primary-950, var(--Primary-color, #001E62));
     text-align: center;
 
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 700;
     line-height: 160%; 
     margin: 0;
@@ -100,23 +111,71 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 10px;
-    gap: 12px;
+    padding: 1rem;
+    gap: 1.2rem;
 }
 
 .text-box img {
     width: auto;
     max-width: fit-content;
-    height: 28px;
+    height: 2.8rem;
 }
 
 .text-box p {
     color: var(--Black, #000);
 
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 160%; 
 }
+@media (max-width: 1200px) {
+
+    .container-case-page{
+        padding: 6rem 10rem 0 10rem;
+    }
+}
+
+@media  (max-width: 1024px) {
+
+    .case-list-main {   
+        grid-template-columns: repeat(2, 1fr);   
+    }
+
+    .image-box img {
+        max-height: 20rem;
+    }
+
+  }
+  
+  @media (max-width: 768px) {
+ 
+    .case-list-main {   
+        grid-template-columns: repeat(1, 1fr);   
+    }
+
+    .image-box img {
+        max-height: 30rem;
+    }
+  }
+  
+  @media (max-width: 470px) {
+    .container-case-page{
+        padding: 5rem 5rem 0 5rem;
+    }
+
+    .case-list-main {   
+        grid-template-columns: repeat(1, 1fr);   
+    }
+
+    .image-box img {
+        max-height: 22rem;
+    }
+    
+  }
+  
+  @media (max-width: 320px) {
+    
+  }
 
 /* Case list cards ends */
