@@ -1,0 +1,205 @@
+.container-cl {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem 20rem;
+    max-width: 144rem;
+}
+
+/* Case list cards start */
+
+.main-box-column-list {
+    width: 100%;
+    background: #F2FBFF;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.cl-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.cl-title p {
+    color: var(--Primary-color, #001E62);
+    text-align: center;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.cl-title .dot-cl span {
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 0;
+    color: #F07B0F;
+}
+
+.cl-main {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    box-sizing: border-box;
+    padding-top: 0rem;
+}
+
+.cl-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.image-box-cl {
+    position: relative;
+}
+
+.image-box-cl img {
+    width: 100%;
+    height: 18.5rem;
+    /* height: auto;
+    max-height: 18.5rem; */
+    display: block;
+    object-fit: cover;
+    border: 1px solid #D1D1D1;
+}
+
+.text-box-cl {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.6rem;
+}
+
+.text-box-cl img {
+    width: auto;
+    max-width: fit-content;
+    height: 2.8rem;
+}
+
+.text-box-cl p {
+    color: var(--Black, #000);
+    text-align: justify;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.item-links-column {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.item-links-column a {
+    min-width: fit-content;
+    display: flex;
+    padding: .4rem .8rem;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--Primary-color, #001E62);
+    color: var(--Primary-color, #001E62);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+@media (max-width: 1200px) {
+    .container-cl {
+        padding: 0 10rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cl-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image-box-cl img {
+        height: 22rem;
+        /* max-height: 20rem; */
+    }
+}
+
+@media (max-width: 768px) {
+    .cl-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image-box-cl img {
+        height: auto;
+        min-height: 30rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .container-cl {
+        padding: 0 5rem;
+    }
+    .cl-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Case list cards ends */
+
+/* Case list pagination start */
+
+.cl-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.cl-pagination a {
+    display: flex;
+    padding: .4rem .8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 3.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: var(--Primary-color, var(--Primary-color, #001E62));
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.cl-pagination a:hover {
+    background-color: #C5C5C5;
+}
+
+.cl-pagination a.active,
+.cl-pagination a.active svg path {
+    background: var(--Primary-color, #001E62);
+    color: var(--Primary-color, var(--Primary-color, #fff));
+    fill: #FFF;
+}
+
+/* Case list pagination end */
