@@ -248,8 +248,12 @@
 
 /* Case detail top side ends */
 
-
 /* Case detail main content stars */
+
+.main-box-content-case-de {
+    width: 100%;
+    background: #F2FBFF;
+}
 
 .main-content-case-de {
     display: flex;
@@ -265,16 +269,13 @@
     align-self: flex-start;
     flex-direction: column;
     gap: 3.2rem;
-
 }
+
 .content-item-case-de:nth-child(even) {
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
 }
 
-.main-content-cards 
-
-
-.content-item-case-de {
+.main-content-cards .content-item-case-de {
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -282,17 +283,17 @@
 }
 
 .content-item-case-de img {
-    width: 50%;
+    width: 52%;
     max-width: 52rem;
     max-height: 32rem;
     height: auto;
     object-fit: cover;
     border-radius: 5px;
-    background:  lightgray 50% / cover no-repeat;
+    background: lightgray 50% / cover no-repeat;
 }
 
 .text-box-case-de-2 {
-    width: 50%;
+    width: 48%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -321,17 +322,18 @@
     line-height: 160%;
 }
 
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
     .content-item-case-de {
         flex-direction: column;
     }
     .content-item-case-de {
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
     }
     .content-item-case-de:nth-child(even) {
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
     }
-    .main-content-cards , .main-content-cards-de {
+    .main-content-cards,
+    .main-content-cards-de {
         gap: 2rem;
     }
     .content-item-case-de img {
@@ -344,9 +346,7 @@
     }
 }
 
-
 /* Case detail main content ends */
-
 
 /* Case list cards start */
 
@@ -358,6 +358,12 @@
     box-sizing: border-box;
 }
 
+.another-case-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
 .case-card {
     display: flex;
     flex-direction: column;
@@ -366,6 +372,7 @@
     background: var(--White, #FFF);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 5px 0px 0px 0px;
+    justify-content: space-between;
 }
 
 .image-box {
@@ -374,8 +381,9 @@
 
 .image-box img {
     width: 100%;
-    height: auto;
-    max-height: 18.5rem;
+    height: 18.5rem;
+    /* height: auto;
+    max-height: 18.5rem; */
     display: block;
     object-fit: cover;
 }
@@ -422,7 +430,7 @@
 
 @media (max-width: 1200px) {
     .container-case-page {
-        padding: 6rem 10rem ;
+        padding: 6rem 10rem;
     }
 }
 
@@ -431,7 +439,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .image-box img {
-        max-height: 20rem;
+        height: 22rem;
+        /* max-height: 20rem; */
     }
 }
 
@@ -440,7 +449,8 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .image-box img {
-        max-height: 30rem;
+        height: auto;
+        min-height: 30rem;
     }
 }
 
@@ -451,9 +461,7 @@
     .case-list-main {
         grid-template-columns: repeat(1, 1fr);
     }
-    .image-box img {
-        max-height: 22rem;
-    }
+    
 }
 
 /* Case list cards ends */

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 6 webinar lists</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cta_header.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/webinar_lists_page6.css">
+    <link rel="stylesheet" href="../css/footer_bahrom.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../assets/icons/logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="">AHCCとは</a></li>
+                <li><a href="">導入事例</a></li>
+                <li><a href="">ウェビナー</a></li>
+                <li><a href="">コラム</a></li>
+                <li><a href="">よくある質問</a></li>
+                <li class="btn_1"><a href="">お問い合わせ</a></li>
+                <li class="btn_2"><a href="">体験会について</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header CTA stars  -->
+    <div class="h-cta-main">
+        <img class="h-cta-img" src="../assets/images/img-page6-top.png" alt="photo">
+        <div class="h-cta-paths">
+            <p>TOP</p>
+            <p>導入事例一覧</p>
+            <p>導入事例詳細</p>
+        </div>
+        <div class="h-cta-title">
+            <h1>導入事例詳細</h1>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const pathsContainer = document.querySelector('.h-cta-paths');
+            const svgIcon = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M6.11785 11.7886C6.18473 11.8556 6.26417 11.9088 6.35163 11.9451C6.43908 11.9813 6.53283 12 6.62751 12C6.72219 12 6.81594 11.9813 6.90339 11.9451C6.99084 11.9088 7.07028 11.8556 7.13716 11.7886L10.4553 8.47041C10.5224 8.40353 10.5755 8.32409 10.6118 8.23664C10.6481 8.14919 10.6667 8.05544 10.6667 7.96076C10.6667 7.86608 10.6481 7.77233 10.6118 7.68488C10.5755 7.59742 10.5224 7.51798 10.4553 7.45111L7.13716 4.13293C7.07023 4.066 6.99078 4.01291 6.90333 3.97669C6.81588 3.94047 6.72216 3.92183 6.62751 3.92183C6.53286 3.92183 6.43913 3.94047 6.35169 3.97669C6.26424 4.01291 6.18478 4.066 6.11785 4.13293C6.05092 4.19986 5.99783 4.27932 5.96161 4.36676C5.92539 4.45421 5.90675 4.54793 5.90675 4.64259C5.90675 4.73724 5.92539 4.83096 5.96161 4.91841C5.99783 5.00585 6.05092 5.08531 6.11785 5.15224L8.92276 7.96437L6.11785 10.7693C5.83592 11.0512 5.84315 11.5139 6.11785 11.7886Z" fill="white"/>
+                </svg>
+            `;
+
+            const paragraphs = pathsContainer.querySelectorAll('p');
+
+            paragraphs.forEach((p, index) => {
+                if (index < paragraphs.length - 1) {
+                    p.insertAdjacentHTML('afterend', svgIcon);
+                }
+            });
+        });
+    </script>
+    <!-- Header CTA ends  -->
+
+    <!-- Case detail main content started -->
+    <div class="main-content-wl container-wl-page">
+
+        <div class="wl-title">
+            <p>導入理由と背景</p>
+            <div class="dot-wl">
+                <span>...</span>
+            </div>
+        </div>
+
+        <div class="main-content-cards-wl">
+
+            <div class="box-webinar-item">
+                <div class="title-webinar-link">
+                    <h1>2023年8月29日（火）16:00 ~ 17:00開催</h1>
+                    <a href="#">受付中</a>
+                </div>
+                <div class="content-item-wl">
+                    <img src="../assets/images/wl-webinar-img.png" alt="Photo">
+
+                    <div class="text-box-wl-2">
+                        <div class="links-wl-item">
+                            <a href="#">#配属１年目向け</a>
+                            <a href="#">#特別セミナー</a>
+                        </div>
+                        <p>【東京】組織的なクラウド統制を成功させるための勘所～ガードレールの活用事例～</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-webinar-item">
+                <div class="title-webinar-link">
+                    <h1>2023年8月29日（火）16:00 ~ 17:00開催</h1>
+                    <a href="#">受付中</a>
+                </div>
+                <div class="content-item-wl">
+                    <img src="../assets/images/wl-webinar-img.png" alt="Photo">
+
+                    <div class="text-box-wl-2">
+                        <div class="links-wl-item">
+                            <a href="#">#配属１年目向け</a>
+                            <a href="#">#特別セミナー</a>
+                        </div>
+                        <p>【東京】組織的なクラウド統制を成功させるための勘所～ガードレールの活用事例～</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Case detail main content ends -->
+
+    <!-- Case list cards start-->
+    <div class="main-box-another-webinars">
+        <div class="container-wl-page another-list-wb">
+            <div class="wl-title">
+                <p>導入理由と背景</p>
+                <div class="dot-wl">
+                    <span>...</span>
+                </div>
+            </div>
+
+            <div class="w-list-main">
+
+                <div class="wl-card">
+                    <div class="image-box-wl">
+                        <img src="../assets/images/wl-webinar-img.png" alt="photo">
+                    </div>
+                    <div class="text-box-wl">
+                        <div class="title-webinar-link-2">
+                            <h1>2023.8.29（火）16:00 ~ 17:00</h1>
+                            <a href="#">受付中</a>
+                        </div>
+                        <p>【東京】組織的なクラウド統制を成功させるための勘所～ガードレールの活用事例～</p>
+                        <div class="links-wl-item-2">
+                            <a href="#">#配属１年目向け</a>
+                            <a href="#">#特別セミナー</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wl-card">
+                    <div class="image-box-wl">
+                        <img src="../assets/images/wl-webinar-img.png" alt="photo">
+                    </div>
+                    <div class="text-box-wl">
+                        <div class="title-webinar-link-2">
+                            <h1>2023.8.29（火）16:00 ~ 17:00</h1>
+                            <a href="#">受付中</a>
+                        </div>
+                        <p>【東京】組織的なクラウド統制を成功させるための勘所～ガードレールの活用事例～</p>
+                        <div class="links-wl-item-2">
+                            <a href="#">#配属１年目向け</a>
+                            <a href="#">#特別セミナー</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wl-card">
+                    <div class="image-box-wl">
+                        <img src="../assets/images/ahcc_cta.png" alt="photo">
+                    </div>
+                    <div class="text-box-wl">
+                        <div class="title-webinar-link-2">
+                            <h1>2023.8.29（火）16:00 ~ 17:00</h1>
+                            <a href="#">受付中</a>
+                        </div>
+                        <p>【東京】組織的なクラウド統制を成功させるための勘所～ガードレールの活用事例～</p>
+                        <div class="links-wl-item-2">
+                            <a href="#">#配属１年目向け</a>
+                            <a href="#">#特別セミナー</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wl-card">
+                    <div class="image-box-wl">
+                        <img src="../assets/images/wl-webinar-img.png" alt="photo">
+                    </div>
+                    <div class="text-box-wl">
+                        <div class="title-webinar-link-2">
+                            <h1>2023.8.29（火）16:00 ~ 17:00</h1>
+                            <a href="#">受付中</a>
+                        </div>
+                        <p>【東京】組織的なクラウド統制を成功させるための勘所～ガードレールの活用事例～</p>
+                        <div class="links-wl-item-2">
+                            <a href="#">#配属１年目向け</a>
+                            <a href="#">#特別セミナー</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wl-card">
+                    <div class="image-box-wl">
+                        <img src="../assets/images/wl-webinar-img.png" alt="photo">
+                    </div>
+                    <div class="text-box-wl">
+                        <div class="title-webinar-link-2">
+                            <h1>2023.8.29（火）16:00 ~ 17:00</h1>
+                            <a href="#">受付中</a>
+                        </div>
+                        <p>【東京】組織的なクラウド統制を成功させるための勘所～ガードレールの活用事例～</p>
+                        <div class="links-wl-item-2">
+                            <a href="#">#配属１年目向け</a>
+                            <a href="#">#特別セミナー</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wl-card">
+                    <div class="image-box-wl">
+                        <img src="../assets/images/wl-webinar-img.png" alt="photo">
+                    </div>
+                    <div class="text-box-wl">
+                        <div class="title-webinar-link-2">
+                            <h1>2023.8.29（火）16:00 ~ 17:00</h1>
+                            <a href="#">受付中</a>
+                        </div>
+                        <p>【東京】組織的なクラウド統制を成功させるための勘所～ガードレールの活用事例～</p>
+                        <div class="links-wl-item-2">
+                            <a href="#">#配属１年目向け</a>
+                            <a href="#">#特別セミナー</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Case list cards end -->
+
+     <!-- Footer Section -->
+     <div class="learn-more container">
+        <div class="lm-title">「AHCC」の詳細や費用を知りたい方へ </div>
+        <div class="lm-cta">
+            <div class="lm-cta-left">
+                <img src="../assets/images/image 19 (1).png" alt="">
+                <img src="../assets/images/Frame 14789.png" alt="">
+            </div>
+            <div class="lm-cta-right">
+                <div class="main-h1">
+                    <p>資料請求・サービスのご相談はお気軽にご連絡ください</p>
+                    <ul class="circle-list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <button>問い合わせる</button>
+            </div>
+        </div>
+     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../assets/icons/footer_logo.png" alt="Asics Logo">
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="footer-links">
+                    <a href="#">TOP</a>
+                    <a href="#">AHCCについて</a>
+                    <a href="#">コラム</a>
+                    <a href="#">ウェビナー</a>
+                    <a href="#">よくある質問</a>
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">Cookieポリシー</a>
+                    <a href="#">利用規約</a>
+                </div>
+            </div>
+            <!-- Logo -->
+            
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                ©ASICS Corporation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
