@@ -1,4 +1,5 @@
 .achh-about {
+
     display: flex;
     align-items: flex-start;
     justify-content: space-between; /* Provides space between left and right content */
@@ -7,11 +8,14 @@
 
 /* Left section */
 .achh-left {
-    flex: 1; /* Left section takes up available space */
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    justify-content: flex-start;
+    justify-content:center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    /* justify-content: flex-start; */
 }
 
 /* Right section (sticky card) */
@@ -31,13 +35,11 @@
 }
 
 .achh-right button {
-
-    background-color: #FF8C00;
-    color: #ffffff; 
+    color: var(--color-btn); 
     font-family: "Noto Sans JP", sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
-    padding: .5rem 90px;
+    padding: 1.2rem 2.4px;
     border: none;
     border-radius: 50px; 
     cursor: pointer;
@@ -77,6 +79,121 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+.underline-heading{
+    /* display: flex; */
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; 
+    padding-bottom: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-bottom: 2px solid #F1821C;
+    width: fit-content;
+}
+
+#slider {
+    width: 100%; /* Set the width as needed */
+    height: auto; /* Adjust height based on your images */
+    position: relative; /* Needed for absolute positioning of images */
+}
+#slider img {
+    width: 100%; /* This makes images stretch to container width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Overlay images on top of each other */
+    top: 0;
+    left: 0;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
