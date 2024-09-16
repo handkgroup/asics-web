@@ -5,6 +5,139 @@
     max-width: 144rem;
 }
 
+/* Column list page slider section starts */
+
+.top-slider-main-box-cl {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.slider-column-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.slider-cl-prew {
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    padding: 1.3rem 1.4rem;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    border-radius: 69px;
+    border: .2rem solid var(--Primary-color, #001E62);
+    background: var(--White, #FFF);
+    color: var(--Primary-color, #001E62);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    transform: rotate(180deg);
+}
+
+.slider-cl-next {
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    padding: 1.3rem 1.4rem;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    border-radius: 70px;
+    border: .2rem solid var(--Primary-color, #001E62);
+    background: var(--White, #FFF);
+    color: var(--Primary-color, #001E62);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.items-slider-cl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cl-card-slider {
+    display: flex;
+    overflow: hidden;
+    padding: 2rem;
+    gap: 2rem;
+    background: #fff;
+    background: #F6F6F6;
+    border-radius: 5px;
+    max-width: 76rem;
+    max-height: 25rem;
+}
+
+.image-box-cl-slider {
+    position: relative;
+    width: 35%;
+}
+
+.image-box-cl-slider img {
+    width: 100%;
+    height: 18.5rem;
+    /* height: auto;
+    max-height: 18.5rem; */
+    display: block;
+    object-fit: cover;
+    border: 1px solid #D1D1D1;
+}
+
+.text-box-cl-slider {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.text-box-cl-slider p {
+    color: var(--Black, #000);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.item-links-column-slider {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.item-links-column-slider a {
+    display: flex;
+    padding: .8rem 1.6rem;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--Primary-color, #001E62);
+    background: var(--White, #FFF);
+    color: var(--Primary-color, #001E62);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+/* Column list page slider section starts */
+
 /* Case list cards start */
 
 .main-box-column-list {
@@ -123,6 +256,13 @@
     line-height: 160%;
 }
 
+.show-current-item-slider {
+    display: flex;
+    gap: .8rem;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1200px) {
     .container-cl {
         padding: 0 10rem;
@@ -146,6 +286,17 @@
     .image-box-cl img {
         height: auto;
         min-height: 30rem;
+    }
+    .cl-card-slider {
+        flex-direction: column;
+        max-height: unset;
+    }
+    .text-box-cl-slider,
+    .image-box-cl-slider {
+        width: 100%;
+    }
+    .image-box-cl-slider img {
+        height: 25rem;
     }
 }
 
@@ -203,3 +354,5 @@
 }
 
 /* Case list pagination end */
+
+
