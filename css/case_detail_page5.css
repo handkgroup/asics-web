@@ -22,7 +22,6 @@
 .case-detail-paths {
     display: flex;
     align-items: center;
-    padding-left: 10rem;
     padding: 1.2rem 0px 1.2rem 10rem;
     gap: .4rem;
     background: #F6F6F6;
@@ -41,6 +40,13 @@
     width: 1.6rem;
     height: 1.6rem;
 }
+
+@media (max-width: 470px) {
+    .case-detail-paths {
+        padding: 1.2rem 0px 1.2rem 5rem;
+    }
+}
+
 
 /* Case detail paths ends */
 
