@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,61 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="../css/header.css">
+
 <body>
     <header>
         <nav>
-            <img src="../assets/icons/logo.png" alt="" class="logo">
+            <a href="#" class="main_logo-link"><img src="../assets/icons/logo.png" alt="" /></a>
             <ul class="menu">
-                <li><a href="">AHCCとは</a></li>
-                <li><a href="">導入事例</a></li>
-                <li><a href="">ウェビナー</a></li>
-                <li><a href="">コラム</a></li>
-                <li><a href="">よくある質問</a></li>
-                <li class="btn_1"><a href="">お問い合わせ</a></li>
-                <li class="btn_2"><a href="">体験会について</a></li>
+                <li><a href="#">AHCCとは</a></li>
+                <li><a href="#">導入事例</a></li>
+                <li><a href="#">ウェビナー</a></li>
+                <li><a href="#">コラム</a></li>
+                <li><a href="#">よくある質問</a></li>
+                <li class="btn_1"><a href="#">お問い合わせ</a></li>
+                <li class="btn_2"><a href="#">体験会について</a></li>
             </ul>
-         
+            <div class="burger_menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
-       
+        <div class="off_screen-menu">
+            <ul class="menu">
+                <li><a href="#">AHCCとは</a></li>
+                <li><a href="#">導入事例</a></li>
+                <li><a href="#">ウェビナー</a></li>
+                <li><a href="#">コラム</a></li>
+                <li><a href="#">よくある質問</a></li>
+                <li class="btn_1"><a href="#">お問い合わせ</a></li>
+                <li class="btn_2"><a href="#">体験会について</a></li>
+            </ul>
+        </div>
     </header>
-    
 
+    <script>
+        "use strict"
+        const burger = document.querySelector(".burger_menu");
+        const offScreenMenu = document.querySelector(".off_screen-menu");
+
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("active");
+            offScreenMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const headerHeight = document.querySelector('header').offsetHeight;
+                window.scrollTo({
+                    top: target.offsetTop - headerHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
