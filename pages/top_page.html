@@ -10,11 +10,45 @@
     <link rel="stylesheet" href="../css/top_page.css">
     <!-- root css -->
     <link rel="stylesheet" href="../css/root.css">
-
+    <!-- header css -->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- Footer css -->
+     <link rel="stylesheet" href="../css/footer_bahrom.css">
 </head>
 
 <body>
-    <div id="header-container"></div>
+    <!-- <div id="header-container"></div> -->
+  <!-- ====================Header=============================== -->   
+    <header>
+        <nav>
+            <a href="#" class="main_logo-link"><img src="../assets/icons/logo.png" alt="" /></a>
+            <ul class="menu">
+                <li><a href="#">AHCCとは</a></li>
+                <li><a href="#">導入事例</a></li>
+                <li><a href="#">ウェビナー</a></li>
+                <li><a href="#">コラム</a></li>
+                <li><a href="#">よくある質問</a></li>
+                <li class="btn_1"><a href="#">お問い合わせ</a></li>
+                <li class="btn_2"><a href="#">体験会について</a></li>
+            </ul>
+            <div class="burger_menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <div class="off_screen-menu">
+            <ul class="menu">
+                <li><a href="#">AHCCとは</a></li>
+                <li><a href="#">導入事例</a></li>
+                <li><a href="#">ウェビナー</a></li>
+                <li><a href="#">コラム</a></li>
+                <li><a href="#">よくある質問</a></li>
+                <li class="btn_1"><a href="#">お問い合わせ</a></li>
+                <li class="btn_2"><a href="#">体験会について</a></li>
+            </ul>
+        </div>
+    </header>
     <!-- ====================serction_1=============================== -->
         <section class="sct_1">
             <img src="../assets/images/sct_1.1.png" alt="" class="main_bg_sct_1">
@@ -423,27 +457,64 @@
     <a href="" class="sct_8_btn">AHCCプログラムについて</a>
    </section>
 
+   <!-- ====================Footer=============================== -->
+  
+   <div class="learn-more container">
+    <div class="lm-title">「AHCC」の詳細や費用を知りたい方へ </div>
+    <div class="lm-cta">
+        <div class="lm-cta-left">
+            <img src="../assets/images/image 19 (1).png" alt="">
+            <img src="../assets/images/Frame 14789.png" alt="">
+        </div>
+        <div class="lm-cta-right">
+            <div class="main-h1">
+                <p>資料請求・サービスのご相談はお気軽にご連絡ください</p>
+                <ul class="circle-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <button>問い合わせる</button>
+        </div>
+    </div>
+ </div>
 
-   <div id="footer-container"></div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../assets/icons/footer_logo.png" alt="Asics Logo">
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <a href="#">TOP</a>
+                <a href="#">AHCCについて</a>
+                <a href="#">コラム</a>
+                <a href="#">ウェビナー</a>
+                <a href="#">よくある質問</a>
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">Cookieポリシー</a>
+                <a href="#">利用規約</a>
+            </div>
+        </div>
+        <!-- Logo -->
+        
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            ©ASICS Corporation. All Rights Reserved.
+        </div>
+    </div>
+</footer>
 
 
 
 
 
 
-
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            });
-        fetch('footer_bahrom.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-container').innerHTML = data;
-            });
-    </script>
+    
+    <script src="../js/header.js"></script>
 </body>
 
 </html>

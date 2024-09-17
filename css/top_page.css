@@ -957,14 +957,16 @@
 }
 
 @media (min-width: 1440px) and (max-width: 2000px) {
-    .sct_1 .sct_1_text {
-        transform: scale(1);
-    }
 
     .sct_1 {
         min-height: 67.1rem;
         margin-top: 6.65rem;
     }
+
+    .sct_1 .sct_1_text {
+        transform: scale(1);
+    }
+
 
     .sct_1 .main_bg_sct_1 {
         border-radius: 0 0 0 15rem;
@@ -977,7 +979,7 @@
     }
 
     .sct_1 {
-        min-height: 35rem;
+        min-height: 65rem;
         margin-top: 6.65rem;
     }
 
@@ -993,7 +995,7 @@
 
     .sct_1 {
         min-height: 50rem;
-        margin-top: 6.65rem;
+        margin-top:7.9rem;
     }
 
     .sct_1 .main_bg_sct_1 {
@@ -1009,7 +1011,7 @@
 
     .sct_1 {
         min-height: 40rem;
-        margin-top: 6.65rem;
+        margin-top: 7.9rem;
     }
 
     .sct_1 .main_bg_sct_1 {
