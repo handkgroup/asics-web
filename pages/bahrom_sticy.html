@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cta_header.css">
+    <link rel="stylesheet" href="../css/achh_page2.css">
+    <link rel="stylesheet" href="../css/footer_bahrom.css">
+    <style>
+        section {
+            position: relative;
+        }
+        .content-container {
+            display: flex;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .main-content-wrapper {
+            flex: 1;
+        }
+        .sticky-card {
+            position: sticky;
+            top: 20px;
+            width: 280px; /* Adjust as needed */
+            margin-left: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            align-self: flex-start;
+        }
+        @media (max-width: 1024px) {
+            .content-container {
+                flex-direction: column;
+            }
+            .sticky-card {
+                position: static;
+                width: auto;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header CTA starts -->
+    <div class="h-cta-main">
+        <!-- ... (header content) ... -->
+    </div>
+
+    <section>
+        <div class="content-container">
+            <div class="main-content-wrapper">
+                <div class="main-content" style="background-color: rgb(121, 91, 51);">
+                    <div class="content-wrapper">
+                        <div class="full-width-bg">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis necessitatibus, velit perspiciatis cum suscipit ea voluptate animi repellat eos? Ipsam odio nam iusto quas provident fuga commodi molestiae quia exercitationem?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ... (repeat for other main-content divs) ... -->
+            </div>
+            
+            <div class="sticky-card">
+                <!-- Sticky content here -->
+                <p>This is the sticky sidebar content</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... (rest of your HTML content) ... -->
+
+    <script>
+        // ... (your existing scripts) ...
+    </script>
+</body>
+</html>

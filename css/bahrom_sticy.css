@@ -1,0 +1,46 @@
+/* Set a max-width container */
+.container {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+  }
+  
+  /* Left side content */
+  .content {
+    width: 100%; /* Calculate remaining space (650px for the sidebar) */
+    background-color: #f5f5f5; /* Add background color for visualization */
+    padding: 20px;
+  }
+  
+  /* Right side sticky card */
+  .sidebar {
+    width: 650px;
+    padding-left: 20px;
+  }
+  
+  .sticky-card {
+    position: sticky;
+    top: 20px; /* Distance from the top of the viewport */
+    background-color: #ffffff; /* Background color for the sticky card */
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow */
+  }
+  
+  /* Make sure the container doesn't overflow on smaller screens */
+  @media (max-width: 1440px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  }
+  
