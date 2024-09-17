@@ -1,9 +1,10 @@
 .achh-about {
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between; /* Provides space between left and right content */
-    gap: 2rem; /* Gap between left and right sections */
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; /* Provides space between left and right content */
+  /* gap: 2rem; Gap between left and right sections */
 }
 
 /* Left section */
@@ -20,9 +21,9 @@
 
 /* Right section (sticky card) */
 .achh-right {
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
-    top: 2rem; /* Distance from the top */
+    top: 2rem;
     width: 300px;
     padding: 2.4rem;
     background-color: white;
@@ -30,8 +31,18 @@
     box-shadow: -1px 0px 16px 0px rgba(0, 0, 0, 0.10);
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
     gap: 1.6rem;
+
+    color: var(--Primary-color, #001E62);
+
+  text-align: justify;
+  /* Noto Sans JP/Body/Body ~ 18_120/bold */
+  font-family: "Noto Sans JP";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 28.8px */
 }
 
 .achh-right button {
@@ -97,102 +108,80 @@
     border-bottom: 2px solid #F1821C;
     width: fit-content;
 }
-
+.achh-slider{
+  gap: 3.2rem;
+  display: flex;
+  flex-direction: column;
+}
 #slider {
-    width: 100%; /* Set the width as needed */
-    height: auto; /* Adjust height based on your images */
-    position: relative; /* Needed for absolute positioning of images */
+    width: 100%;
+    height: auto; 
+    position: relative; 
 }
 #slider img {
-    width: 100%; /* This makes images stretch to container width */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute; /* Overlay images on top of each other */
+    width: 100%; 
+    height: auto;
+    position: absolute; 
     top: 0;
     left: 0;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-    position: relative;
-  }
+.container1 {
+  position: relative;
+  border-radius: 50px;
+
+}
   
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
+.mySlides {
+  display: none;
+  position: relative;
+  height: 100%;
+}
   
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
+.cursor {
+  cursor: pointer;
+}
   
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  padding: 4px 8px;
+  position: absolute;
+  margin-bottom: 1.5rem;
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: "Noto Sans JP";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 28.8px */
+  border-radius: 10px;
+  background: var(--White, #FFF);
+}
   
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
 
 
 /* Responsive adjustments */
