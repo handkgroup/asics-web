@@ -1,0 +1,213 @@
+.sct_form{
+    width: 100%;
+}
+
+.sct_form .main_h1 {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    gap: .8rem;
+    margin-top: 6.65rem;
+}
+
+.sct_form .circle_list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: .4rem;
+}
+
+.sct_form .circle_list li {
+    width: .5rem;
+    height: .5rem;
+    background-color: #FF8C00;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.sct_form h5 {
+    color: #000;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 2.4rem;
+    font-weight: var(--bold-weight);
+    margin-bottom: 6rem;
+}
+
+
+.form-container {
+    max-width: 104rem;
+    margin: 0 auto;
+    padding: 2rem;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 1rem;
+    border: .2rem solid var(--gray, #B6B6B6);
+    background: #F6F6F6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.input-group label{
+    display: block;
+    color: var(--Black, #000);
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: .8rem;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: .8rem 2.4rem;
+    border: .1rem solid #ccc;
+    border-radius: .5rem;
+    border: .1rem solid var(--gray, #B6B6B6);
+    background: var(--White, #FFF);
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #C5C5C5;
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.08rem;
+}
+
+.required {
+    font-size: 1.2rem;
+    margin-left: .5rem;
+    color: #F00;
+    font-weight: 700;
+    padding: .4rem 1.2rem;
+    border-radius: .4rem;
+    border: .1rem solid #F00;
+    background: var(--White, #FFF);
+}
+
+.row {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.radio-group label {
+    font-weight: bold;
+    color: var(--Black, #000);
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.radio-group h6{
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    color: var(--Black, #000);
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.radio-group div {
+    margin-bottom:.8rem ;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.radio-group .custom-radio {
+    display: none;
+}
+
+.radio-group .custom-radio + img{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: .1rem;
+    transition: background 0.3s;
+}
+.radio-group .custom-radio:checked + img {
+    transform: scale(1);
+    background: #B6B6B6;
+}
+
+.form-text p{
+    color: var(--Black, #000);
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.final_input{
+    text-align: center;
+}
+
+.final_input h6{
+    font-weight: bold;
+    color: var(--Black, #000);
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.final_input label {
+    font-weight: bold;
+    color: var(--Black, #000);
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.final_input .custom-radio {
+    display: none;
+}
+
+.final_input + img{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: .1rem;
+    transition: background 0.3s;
+}
+.final_input .custom-radio:checked + label img {
+    transform: scale(1);
+    background: #B6B6B6;
+}
+
+
+.btn {
+    width: fit-content;
+    margin: 0 auto;
+    background: var(--color-btn);
+    border-radius: var(--border-radius);
+    padding: 1.2rem 6rem;
+    font-family: var(--font-family);
+    color: var(--text-color-def);
+    font-size: 2rem;
+    font-weight: var(--bold-weight);
+}
+
+.btn:hover {
+    background-color: var(--hover-dark);
+    transform: scale(1.05);
+}
