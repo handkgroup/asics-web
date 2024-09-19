@@ -1,166 +1,159 @@
-.achh-about {
-  max-width: 1440px;
+.for_padding{
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; /* Provides space between left and right content */
-  /* gap: 2rem; Gap between left and right sections */
+  padding: 6rem 55rem 6rem 20rem;
 }
 
-/* Left section */
-.achh-left {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content:center;
-    align-items: center;
-    max-width: 600px;
-    width: 100%;
-    /* justify-content: flex-start; */
-}
-
-/* Right section (sticky card) */
-.achh-right {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 2rem;
-    width: 300px;
-    padding: 2.4rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: -1px 0px 16px 0px rgba(0, 0, 0, 0.10);
-    display: flex;
-    flex-direction: column;
-   
-    gap: 1.6rem;
-
-    color: var(--Primary-color, #001E62);
-
-  text-align: justify;
-  /* Noto Sans JP/Body/Body ~ 18_120/bold */
-  font-family: "Noto Sans JP";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 160%; /* 28.8px */
-}
-
-.achh-right button {
-    color: var(--color-btn); 
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    padding: 1.2rem 2.4px;
-    border: none;
-    border-radius: 50px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    justify-content: center; 
-    align-items: center; 
-    width: fit-content;
-    
-}
-
-/* Title styling */
+/* <!-- --------------------------------3 dot------------------------------------------ --> */
 .main-h1 {
-    color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Noto Sans JP";
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 160%;
-    gap: .8rem;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+  gap: .8rem;
 }
 
-/* Circle list styling */
 .circle-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    gap: .4rem;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: .4rem;
 }
 
 .circle-list li {
-    width: .5rem;
-    height: .5rem;
-    background-color: #FF8C00;
-    border-radius: 50%;
-    display: inline-block;
+  width: .5rem;
+  height: .5rem;
+  background-color: #FF8C00;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.underline-heading{
-    /* display: flex; */
-    color: var(--text-color);
-    text-align: center;
-    font-family: "Noto Sans JP";
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%; 
-    padding-bottom: 0.8rem;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    border-bottom: 2px solid #F1821C;
-    width: fit-content;
+/* <!-- --------------------------------sticky_card------------------------------------------ --> */
+
+.sticky_card {
+  float: right;
+  position: sticky;
+  top: 10%;
+  margin: 3.3rem 0;
+  right: 13.8%;
+  width: 30rem;
+  padding: 2.4rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: -1px 0px 16px 0px rgba(0, 0, 0, 0.10);
 }
-.achh-slider{
-  gap: 3.2rem;
+
+.sticky_card h6{
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.sticky_card p{
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 1.6rem;
+}
+
+.sticky_card div span{
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.sticky_card div {
+  margin-top: 1.2rem;
   display: flex;
   flex-direction: column;
-}
-#slider {
-    width: 100%;
-    height: auto; 
-    position: relative; 
-}
-#slider img {
-    width: 100%; 
-    height: auto;
-    position: absolute; 
-    top: 0;
-    left: 0;
+  gap: .8rem;
+  padding:0 3.4rem;
 }
 
-.container1 {
-  position: relative;
-  border-radius: 50px;
-
-}
-  
-.mySlides {
-  display: none;
-  position: relative;
-  height: 100%;
-}
-  
-.cursor {
-  cursor: pointer;
-}
-  
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  padding: 4px 8px;
-  position: absolute;
-  margin-bottom: 1.5rem;
-  bottom: 0; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  box-sizing: border-box;
-  color: var(--text-color);
-  font-family: "Noto Sans JP";
-  font-size: 18px;
-  font-style: normal;
+.sticky_card h5{
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 160%; /* 28.8px */
-  border-radius: 10px;
-  background: var(--White, #FFF);
+  margin-top: 1.6rem;
+}
+
+.sticky_card h5 span{
+  display: block;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+
+.sticky_card .for_btn{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.sticky_card .btn {   
+  text-align: center;
+  border: 2px solid var(--color-btn);
+  border-radius: var(--border-radius);
+  padding: 1.2rem 2.4rem;
+  font-family: var(--font-family); 
+  color:var(--color-btn);
+  font-size: var(--body-font-size);
+  font-weight: var(--bold-weight);
+}
+.sticky_card .btn:hover {   
+  background-color: var(--hover-light);
+  transform: scale(1.05);
+}
+
+/* <!-- --------------------------------section_1------------------------------------------ --> */
+
+.sct_1 h4{
+  width: fit-content;
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom:.2rem solid #F1821C;
+  padding-bottom: .8rem;
+  margin: 3rem 0 2rem;
+}
+
+.sct_1 .sct_1_list {
+  line-height: 2.6rem;
+  padding-left: 2rem;
+}
+
+.sct_1 .sct_1_list li{
+  color: var(--Black, #000);
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 400;
+  list-style:disc;  
+}
+
+/* <!-- --------------------------------section_2------------------------------------------ --> */
+
+.sct_2 {
+  background: #E9F7FF;
+}
+
+.sct_2 .top_txt{
+  margin: 3.2rem 0;
+  color: var(--Black, #000);
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 400;
 }
   
 .row:after {
@@ -201,30 +194,120 @@
   flex-direction: column;
   gap: 2rem;
 }
-.sticky-card {
-  float: right;
-  position: sticky;
-  top: 2rem;
-  right: 8%;
-  width: 30rem;
-  padding: 2.4rem;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: -1px 0px 16px 0px rgba(0, 0, 0, 0.10);
+
+/* <!-- --------------------------------section_3------------------------------------------ --> */
+
+.sct_3 .box{
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.sct_3 .box h4{
+  width: fit-content;
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom:.2rem solid #F1821C;
+  padding-bottom: .8rem;
+  margin: 3rem 0 2rem;
+}
+
+.sct_3 .box p{
+  color: var(--Black, #000);
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.8rem 0 0;
+}
+
+.sct_3 .box .left_card,
+.sct_3 .box .right_card{
+  width: 50%;
+}
+
+.sct_3 .box .for_img{
+  width: 100%;
+  height: 22rem;
+  object-fit:fill;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: .2rem  solid #E7E7E7;
+}
+
+.sct_3 .box .for_img img{
+  width: 100%;
+  display: block;
+}
+
+/* <!-- --------------------------------section_4------------------------------------------ --> */
+
+.sct_4 .box{
   display: flex;
   flex-direction: column;
-  
-  gap: 1.6rem;
-  color: var(--Primary-color, #001E62);
-  text-align: justify;
-  font-family: "Noto Sans JP";
-  font-size: 18px;
-  font-style: normal;
+  gap: 6rem;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.sct_4 .box h4{
+  width: fit-content;
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 160%; 
+  border-bottom:.2rem solid #F1821C;
+  padding-bottom: .8rem;
+  margin: 3rem 0 2rem;
+}
+
+.sct_4 .box p{
+  color: var(--Black, #000);
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.8rem 0 0;
+}
+
+.sct_4 .box .left_card,
+.sct_4 .box .right_card{
+  width:100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.sct_4 .box .right_card{
+  flex-direction: row-reverse;
+}
+
+.sct_4 .box .for_img{
+  width: 34rem;
+  height: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: .2rem  solid #E7E7E7;
+}
+
+.sct_4 .box .for_img img{
+  width: 100%;
+  display: block;
 }
 
 
+
+
+
+/* 
 @media (max-width: 768px) {
   .main-content {
     padding-right: 0; 
@@ -269,4 +352,4 @@
     padding: 6rem 0;
   }
   
-}
+} */
