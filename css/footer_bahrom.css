@@ -4,7 +4,7 @@
 .learn-more{
     display: grid;
     gap: 2.8rem;
-    background: var(--primary-color);
+    background: var(--primary-color, #09122B);
     padding: 6rem 12rem 6rem 12rem;
 }
 
