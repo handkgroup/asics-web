@@ -54,7 +54,7 @@ span{
   border-radius: 10px;
   background-color: #fff;
   box-shadow: -1px 0px 16px 0px rgba(0, 0, 0, 0.10);
-  z-index: 100;
+  z-index: 10;
 }
 
 .sticky_card h6{
@@ -238,6 +238,8 @@ span{
 .sct_3 .box .right_card{
   width: 50%;
 }
+
+
 
 .sct_3 .box .for_img{
   width: 100%;
@@ -706,7 +708,7 @@ span{
 .sct_6 .box_2 .card_2 .grid_container{
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: repeat(2, auto);   
+  /* grid-template-rows: repeat(2, auto);    */
   gap: 2rem ;   
   background-color: #fff;                         
 }
@@ -811,7 +813,39 @@ span{
 @media(max-width:768px){
   .for_padding{
     width: 100%;
-    padding: 6rem 10rem;
+    padding: 6rem;
   }
+  .sct_3 .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .sct_3 .box .left_card,
+  .sct_3 .box .right_card{
+    width: 100%;
+}
+
+.sct_3 .box .for_img{
+  width: 100%;
+  height:22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: .2rem  solid #E7E7E7;
+}
+
+.sct_3 .box .for_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sct_6 .box_2 .card_2 .grid_container{
+  grid-template-columns: repeat(2, 1fr); 
+}
   
 }
