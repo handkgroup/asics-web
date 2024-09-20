@@ -185,7 +185,7 @@ nav .burger_menu{
 }
 
 
-@media(min-width: 1024px){
+@media(min-width: 1025px){
     .off_screen-menu.active{
         transform: translate(100%, 100%);
     }
