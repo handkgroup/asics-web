@@ -280,13 +280,15 @@ span {
 }  
 
 .wrapper .last_box .card .for_img{
-    max-width: 15rem;
-    max-height: 15rem;
+    width: 15rem;
+    /* height: 15rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }   
 
 .wrapper .last_box .card .for_img img{
     width: 100%;
-    height: 100%;
 }   
 
 .wrapper .last_box .card .for_txt h4 {
@@ -328,5 +330,27 @@ span {
       width: 100%;
       padding: 6rem;
     }
+
+    .wrapper .row{
+        flex-direction: column;
+    } 
+    
+    .wrapper .row .for_txt{
+        width: 100%;
+    }  
+    
+
+    .wrapper .last_box .card{
+        flex-direction: column;
+        width: 100%;
+    }  
+
+    .wrapper .last_box .card .for_img{
+        width: 100%; 
+    }   
+    
+    .wrapper .last_box .card .for_img img{
+        width: 80%;
+    }  
     
   }
