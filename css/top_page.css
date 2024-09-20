@@ -1330,6 +1330,23 @@
         height: 30rem;
     }
 }
+@media(max-width: 425px){
+    .sct_6 .box .card {
+        flex-direction: column;
+    }
+    .sct_6 .box .card .left_card .shape {
+        width: 100%;
+        height: 24rem;
+    }
+    .sct_6 .box .card .left_card h2 {
+        left: 0;
+    }
+    .sct_6 .box .card .left_card p {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
 /* <!-- ====================media_7=============================== --> */
 
