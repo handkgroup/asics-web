@@ -186,14 +186,22 @@ span {
     background: #E9F7FF;
 }
 
-.sct_1 .for_img{    
-    border-radius: .5rem;
+.sct_1 .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sct_1 .wrapper .for_img{    
+    border-radius: 1rem;
     width: 60%;
     margin: 0 auto;
 }
 
 .sct_1 .for_img img{
     width: 100%;
+    border-radius: 1rem;
 }
 
 .sct_1 .for_txt{
@@ -328,6 +336,7 @@ span {
     color: var(--Black, #000);
     font-size: 2.4rem;
     font-weight: 700;
+    margin: 2rem 0 .8rem;
 }
 
 .sct_2 .box .card_2 .content {
@@ -405,7 +414,7 @@ span {
   @media(max-width:768px){
     .for_padding{
       width: 100%;
-      padding: 6rem;
+      padding: 3rem;
     }
     
   }

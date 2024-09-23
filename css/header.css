@@ -29,8 +29,8 @@ header nav ul {
 header nav ul a{   
     font-family: var(--font-family); 
     color:var(--text-color);
-    font-size: var(--body-font-size);
-    font-weight: var(--bold-weight);
+    font-size: 1.6rem;
+    font-weight: 700;
     scroll-behavior: smooth;
 }
 
@@ -47,8 +47,8 @@ header nav ul .btn_1:hover {
 header nav ul .btn_1 a{   
     font-family: var(--font-family); 
     color:var(--color-btn);
-    font-size: var(--body-font-size);
-    font-weight: var(--bold-weight);
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 header nav ul .btn_2 {   
@@ -143,7 +143,7 @@ nav .burger_menu{
     width: 100%;
     font-family: var(--font-family); 
     color:var(--text-color);
-    font-size: var(--body-font-size);
+    font-size: 1.6rem;
     font-weight: var(--bold-weight);
     scroll-behavior: smooth;
 }
@@ -163,7 +163,7 @@ nav .burger_menu{
 .off_screen-menu .btn_1 a{   
     font-family: var(--font-family); 
     color:var(--color-btn);
-    font-size: var(--body-font-size);
+    font-size: 1.6rem;
     font-weight: var(--bold-weight);
 }
 .off_screen-menu .btn_2 {   
@@ -180,7 +180,7 @@ nav .burger_menu{
 .off_screen-menu ul .btn_2 a{   
     font-family: var(--font-family); 
     color:var(--text-color-def);
-    font-size: var(--body-font-size);
+    font-size: 1.6rem;
     font-weight: var(--bold-weight);
 }
 

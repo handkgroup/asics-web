@@ -281,19 +281,23 @@ span {
 
 .wrapper .last_box .card .for_img{
     width: 15rem;
-    /* height: 15rem; */
-    display: flex;
+    height: 15rem;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }   
 
 .wrapper .last_box .card .for_img img{
-    width: 100%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
 }   
 
 .wrapper .last_box .card .for_txt h4 {
    display: flex;
    gap: 2.1rem;
+   border-bottom: none;
+   padding: 0;
 } 
 
 /* <!-- --------------------------------Media------------------------------------------ -->   */
@@ -328,7 +332,7 @@ span {
   @media(max-width:768px){
     .for_padding{
       width: 100%;
-      padding: 6rem;
+      padding: 3rem;
     }
 
     .wrapper .row{
@@ -337,20 +341,6 @@ span {
     
     .wrapper .row .for_txt{
         width: 100%;
-    }  
-    
-
-    .wrapper .last_box .card{
-        flex-direction: column;
-        width: 100%;
-    }  
-
-    .wrapper .last_box .card .for_img{
-        width: 100%; 
-    }   
-    
-    .wrapper .last_box .card .for_img img{
-        width: 80%;
     }  
     
   }

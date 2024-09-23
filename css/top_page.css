@@ -176,6 +176,7 @@
     font-family: var(--font-family);
     font-size: 1.6rem;
     font-weight: var(--regular-weight);
+    line-height: 2.56rem;
 }
 
 .sct_2 .sct_2_right {

@@ -813,7 +813,7 @@ span{
 @media(max-width:768px){
   .for_padding{
     width: 100%;
-    padding: 6rem;
+    padding: 3rem;
   }
   .sct_3 .box{
     display: flex;

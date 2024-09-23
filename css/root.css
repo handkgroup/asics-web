@@ -87,7 +87,7 @@ html {
   .container{
     width: 100%;
     margin: 0 auto;
-    padding: 3rem 3rem;
+    padding: 3rem;
   }
 }
 
@@ -98,8 +98,8 @@ html {
   .container{
     width: 100%;
     margin: 0 auto;
-    padding: 3rem 3rem;
-  }
+    padding: 3rem ;
+  
 }
 
 
