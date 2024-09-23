@@ -94,9 +94,9 @@
 
 .links-list-case-de p,
 .links-list-case-de a {
-    padding: 4px 8px;
-    gap: 10px;
-    border-radius: 5px;
+    padding: .4rem .8rem;
+    gap: 1rem;
+    border-radius: .5rem;
     border: 1px solid var(--Primary-color, #001E62);
     background: var(--White, #FFF);
     color: var(--Primary-color, #001E62);
@@ -110,10 +110,10 @@
 .top-content-case-de {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 2rem;
     box-sizing: border-box;
     gap: 1.8rem;
-    border-radius: 20px;
+    border-radius: 2rem;
     background: #F6F6F6;
 }
 
@@ -126,6 +126,7 @@
     height: max-content;
     min-height: 20rem;
     background-color: #FFF;
+    border-radius: 1rem;
 }
 
 .img-box-top-case-de img {
@@ -133,11 +134,13 @@
     max-width: 30rem;
 }
 
-.content-list-case-de {
+.case-de-top-main .top-content-case-de .content-list-case-de {
     display: grid;
     grid-template-columns: repeat(4, minmax(12rem, 1fr));
-    max-width: 702px;
+    max-width: 70.2rem;
     width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .content-list-case-de p {
@@ -158,6 +161,7 @@
     border-right: 1px solid #F6F6F6;
     border-bottom: 1px solid #F6F6F6;
     background: var(--White, #FFF);
+    
 }
 
 .content-list-case-de p:nth-child(odd) {
