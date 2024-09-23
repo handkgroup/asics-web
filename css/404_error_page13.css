@@ -5,14 +5,14 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    /* height: 27rem; */
+    /* height: 70vh; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.20);
-    /* margin-top: 74.5px; */
 }
 
 .error-main::before {
@@ -93,10 +93,6 @@
     font-weight: 700;
     line-height: 160%;
     min-width: fit-content;
-}
-
-.error-main {
-    height: 70vh;
 }
 .footer-error-page {
     height: 30vh;

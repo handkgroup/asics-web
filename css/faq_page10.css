@@ -73,15 +73,10 @@
     font-size: 2rem;
     font-weight: 700;
 }
-.faq_body .faq_card .faq_question h3 span{
+.faq_body .faq_card .faq_question h3 img{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--White, #FFF);
-    font-size: 2rem;
-    font-weight: 700;
-    border-radius: 50%;
-    background: var(--Primary-color, #001E62);
     width: 5rem;
     height: 5rem;
 }
