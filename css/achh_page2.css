@@ -258,6 +258,7 @@ span{
   display: block;
 }
 
+
 /* <!-- --------------------------------section_4------------------------------------------ --> */
 
 .sct_4 h6{
@@ -335,6 +336,10 @@ span{
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.sct_4{
+  padding-bottom: 0;
 }
 
 /* <!-- --------------------------------section_5------------------------------------------ --> */
@@ -482,6 +487,9 @@ span{
   margin: 2rem 0 0;
 }
 
+.sct_5{
+  padding-top: 0;
+}
 
 /* <!-- --------------------------------section_6------------------------------------------ --> */
 
@@ -600,13 +608,12 @@ span{
 }
 
 .sct_6 .box_1 .card_2   .for_txt h4{
-  width: fit-content;
+  width: 100%;
   color: var(--Black, #000);
-  text-align: center;
   font-family: var(--font-family);
   font-size: 2rem;
   font-weight: 700;
-  border-bottom:.2rem solid #F1821C;
+  border-bottom: .2rem solid #F1821C;
   padding-bottom: .8rem;
 }
 
@@ -636,6 +643,7 @@ span{
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding-top: 3.2rem;
 }
 
 .sct_6 .box_2 h2{

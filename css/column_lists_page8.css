@@ -47,7 +47,7 @@
     align-items: center;
     position: relative;
     width: 100%;
-    max-width: 76rem;
+    max-width: 56rem;
     overflow: hidden;
 }
 
@@ -341,9 +341,17 @@
         top: 50%;
         transform: translateY(-50%);
         background: rgba(255, 255, 255, 0.3);
+        height: 5rem;
+        width: 5rem;
        
     }
+    .slider-cl-prew {
+        left: -60px;
+    }
     
+    .slider-cl-next {
+        right: -60px;
+    }
 
     
 
@@ -355,6 +363,20 @@
     }
     .cl-main {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .slider-cl-prew {
+        left: -30px;
+    }
+    
+    .slider-cl-next {
+        right: -30px;
+    }
+    .slider-cl-prew,
+    .slider-cl-next {
+
+        height: 3.5rem;
+        width: 3.5rem;
+       
     }
 }
 
