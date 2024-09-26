@@ -30,6 +30,7 @@ header nav ul a{
     font-family: var(--font-family); 
     color:var(--text-color);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: 700;
     scroll-behavior: smooth;
 }
@@ -50,6 +51,7 @@ header nav ul .btn_1 a{
     font-family: var(--font-family); 
     color:var(--color-btn);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: 700;
 }
 
@@ -70,6 +72,7 @@ header nav ul .btn_2 a{
     font-family: var(--font-family); 
     color:var(--text-color-def);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: 700;
 }
 
@@ -148,6 +151,7 @@ nav .burger_menu{
     font-family: var(--font-family); 
     color:var(--text-color);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: var(--bold-weight);
     scroll-behavior: smooth;
 }
@@ -168,6 +172,7 @@ nav .burger_menu{
     font-family: var(--font-family); 
     color:var(--color-btn);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: var(--bold-weight);
 }
 .off_screen-menu .btn_2 {   
@@ -185,6 +190,7 @@ nav .burger_menu{
     font-family: var(--font-family); 
     color:var(--text-color-def);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: var(--bold-weight);
 }
 

@@ -168,7 +168,7 @@
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 160%;
+    line-height: 2.6rem;
 }
 
 .content-cd-tabel1>ul>li>ul>li {
@@ -177,7 +177,7 @@
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%;
+    line-height: 2.6rem;
 }
 
 .content-info-texts-cd {
@@ -212,7 +212,7 @@
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%;
+    line-height: 2.6rem;
 }
 
 .cit--cd-2 {
@@ -239,7 +239,7 @@
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%;
+    line-height: 2.6rem;
 }
 
 .cit--cd-3 {
@@ -253,7 +253,7 @@
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 160%;
+    line-height: 2.6rem;
     list-style-type: disc;
     list-style-position: inside;
 }
@@ -275,7 +275,7 @@
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%;
+    line-height: 2.6rem;
 }
 
 .content-table-cd tbody tr td:first-child,
@@ -393,7 +393,7 @@
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 2.6rem;
 }
 
 @media (max-width: 768px) {
@@ -551,7 +551,7 @@
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%;
+    line-height: 2.6rem;
 }
 
 .links-ap-cd {

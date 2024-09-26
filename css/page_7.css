@@ -96,6 +96,7 @@ span {
     color: #000;
     font-family: var(--font-family);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: 400;
     margin: 1.2rem 0;
 }
@@ -119,6 +120,7 @@ span {
     color: var(--Black, #000);
     font-family: var(--font-family);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: 700;
     margin-bottom: .8rem;
 }
@@ -247,6 +249,7 @@ span {
     color: #000;
     font-size: 1.6rem;
     font-weight: 400;
+    line-height: 2.6rem;
 }  
 
 .wrapper .row{

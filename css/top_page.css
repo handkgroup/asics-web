@@ -233,6 +233,7 @@
     color: var(--Black, #000);
     font-family: var(--font-family);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: var(--regular-weight);
 }
 
@@ -297,6 +298,7 @@
     color: #000;
     font-family: var(--font-family);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: 400;
 }
 
@@ -396,6 +398,7 @@
     color: var(--primary-color);
     font-family: var(--font-family);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: var(--bold-weight);
     margin: 5rem 0;
 }
@@ -483,6 +486,7 @@
     color: #000;
     font-family: var(--font-family);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: 400;
     margin-top: 2rem;
 }
@@ -672,6 +676,7 @@
     color: #000;
     font-family: var(--font-family);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-weight: var(--regular-weight);
 }
 
@@ -936,6 +941,7 @@
 .text-box-wl p {
     color: var(--Black, #000);
     font-size: 1.6rem;
+    line-height: 2.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: 160%;

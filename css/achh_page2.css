@@ -68,6 +68,7 @@ span{
   color: var(--primary-color);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 700;
   margin-top: 1.6rem;
 }
@@ -91,6 +92,7 @@ span{
   color: var(--primary-color);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 700;
   margin-top: 1.6rem;
 }
@@ -100,6 +102,7 @@ span{
   color: var(--primary-color);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
 }
 
@@ -148,6 +151,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
   list-style:disc;  
 }
@@ -163,6 +167,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
 }
   
@@ -230,6 +235,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
   margin: 1.8rem 0 0;
 }
@@ -291,6 +297,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
 }
 
@@ -318,6 +325,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
   margin: 2rem 0 0;
 }
@@ -370,6 +378,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
 }
 
@@ -431,6 +440,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
   margin: 2rem 0 0;
 }
@@ -483,6 +493,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
   margin: 2rem 0 0;
 }
@@ -589,6 +600,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
 }
 
@@ -623,7 +635,7 @@ span{
   font-family: var(--font-family);
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2.5rem;
+  line-height: 2.6rem;
 }
 
 .sct_6 .box_1 .card_2  .for_img{
@@ -682,6 +694,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 400;
 }
 
@@ -740,6 +753,7 @@ span{
   color: var(--Black, #000);
   font-family: var(--font-family);
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 700;
 }
 
@@ -761,6 +775,7 @@ span{
   color: var(--Black, #000);
   text-align: center;
   font-size: 1.6rem;
+  line-height: 2.6rem;
   font-weight: 700;
   margin: 2rem 0 3rem;
 }
