@@ -97,7 +97,6 @@
 
 .sct_1 .sct_1_text .sct_1_btn .sct_1_btn1:hover {
     background-color: var(--hover-light);
-    transform: scale(1.05);
 }
 
 .sct_1 .sct_1_text .sct_1_btn .sct_1_btn2 {
@@ -114,7 +113,6 @@
 
 .sct_1 .sct_1_text .sct_1_btn .sct_1_btn2:hover {
     background-color: var(--hover-dark);
-    transform: scale(1.05);
 }
 
 /* <!-- ====================serction_2=============================== --> */

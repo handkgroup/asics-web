@@ -37,7 +37,7 @@ header nav ul a{
 header nav ul .btn_1 {   
     border: .2rem solid var(--color-btn);
     border-radius: var(--border-radius);
-    padding: 1.2rem 2.4rem;
+    
 }
 header nav ul .btn_1:hover {   
     background-color: var(--hover-light);
@@ -45,6 +45,8 @@ header nav ul .btn_1:hover {
 }
 
 header nav ul .btn_1 a{   
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
     font-family: var(--font-family); 
     color:var(--color-btn);
     font-size: 1.6rem;
@@ -52,9 +54,9 @@ header nav ul .btn_1 a{
 }
 
 header nav ul .btn_2 {   
+    border: .2rem solid var(--color-btn);
     background: var(--color-btn);
     border-radius: var(--border-radius);
-    padding: 1.2rem 2.4rem;
 }
 
 header nav ul .btn_2:hover {   
@@ -63,10 +65,12 @@ header nav ul .btn_2:hover {
 }
 
 header nav ul .btn_2 a{   
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
     font-family: var(--font-family); 
     color:var(--text-color-def);
-    font-size: var(--body-font-size);
-    font-weight: var(--bold-weight);
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 /* Burger starts here */
