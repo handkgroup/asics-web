@@ -165,7 +165,6 @@ nav .burger_menu{
 }
 .off_screen-menu .btn_1:hover {   
     background-color: var(--hover-light);
-    transform: scale(1.05);
 }
 
 .off_screen-menu .btn_1 a{   
@@ -183,7 +182,6 @@ nav .burger_menu{
 
 .off_screen-menu .btn_2:hover {   
     background-color: var(--hover-dark);
-    transform: scale(1.05);
 }
 
 .off_screen-menu ul .btn_2 a{   
@@ -210,9 +208,5 @@ nav .burger_menu{
         display: flex;
     }
 }
-
-/* @media(max-width: 768px){
-    
-} */
 
 
