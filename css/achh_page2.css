@@ -797,7 +797,6 @@ span {
 
 .sct_6 .box_2 .card_3 .btn:hover {
   background-color: var(--hover-dark);
-  transform: scale(1.05);
 }
 
 /* <!-- --------------------------------Media------------------------------------------ -->   */
