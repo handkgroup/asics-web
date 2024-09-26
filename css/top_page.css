@@ -221,6 +221,12 @@
 .sct_3 h6 span {
     display: block;
 }
+.sct_3 h6 .three_dots {
+    display: flex;
+    justify-content: center;
+    gap: .4rem;
+    margin-top: .8rem;
+}
 
 .sct_3 video {
     width: 55%;
@@ -533,7 +539,6 @@
 
 .sct_5 .sct_5_btn:hover {
     background-color: var(--hover-dark);
-    transform: scale(1.05);
 }
 
 /* <!-- ====================serction_6=============================== -->  */
@@ -816,7 +821,6 @@
 
 .another-case-list .sct_7_btn:hover {
     background-color: var(--hover-dark);
-    transform: scale(1.05);
 }
 
 /* <!-- ====================serction_8=============================== -->  */
@@ -978,7 +982,6 @@
 
 .main-box-another-webinars .sct_8_btn:hover {
     background-color: var(--hover-dark);
-    transform: scale(1.05);
 }
 
 /*  
