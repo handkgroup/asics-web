@@ -174,7 +174,7 @@
     font-family: var(--font-family);
     font-size: 1.6rem;
     font-weight: var(--regular-weight);
-    line-height: 2.56rem;
+    line-height: 2.6rem;
 }
 
 .sct_2 .sct_2_right {
@@ -207,7 +207,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6rem;
+    gap: 3.2rem;
 }
 
 .sct_3 h6 {
@@ -241,7 +241,7 @@
     margin: 0 auto;
     background: var(--color-btn);
     border-radius: var(--border-radius);
-    padding: 1.2rem 6rem;
+    padding: 2rem 6rem;
     font-family: var(--font-family);
     color: var(--text-color-def);
     font-size: 2.4rem;
@@ -250,7 +250,6 @@
 
 .sct_3 .sct_3_btn:hover {
     background-color: var(--hover-dark);
-    transform: scale(1.05);
 }
 
 /* <!-- ====================serction_4=============================== -->  */
@@ -448,15 +447,15 @@
 
 .sct_5 .box .card:nth-child(even) {
     align-self: flex-end;
-    padding: 5rem 20rem 5rem 35rem;
+    padding: 5rem 20rem 10rem 35rem;
 }
 
 .sct_5 .box .card:nth-child(odd) {
     align-self: flex-start;
-    padding: 5rem 35rem 5rem 20rem;
+    padding: 5rem 35rem 10rem 20rem;
 }
 
-.sct_5 .box .card h1 {
+.sct_5 .box .card h2 {
     position: absolute;
     color: var(--secondary-color);
     font-family: var(--font-family);
@@ -471,7 +470,7 @@
     color: var(--primary-color);
     font-family: var(--font-family);
     font-size: 2rem;
-    font-weight: var(--bold-weight);
+    font-weight: 500;
     border-bottom: .3rem solid var(--secondary-color);
 }
 
@@ -484,7 +483,7 @@
     color: #000;
     font-family: var(--font-family);
     font-size: 1.6rem;
-    font-weight: var(--mid-weight);
+    font-weight: 400;
     margin-top: 2rem;
 }
 
@@ -502,12 +501,12 @@
 
 .sct_5 .box .card:nth-child(odd) div {
     top: -11rem;
-    right: -10rem;
+    right: -7rem;
 }
 
 .sct_5 .box .card:nth-child(even) div {
     top: -7rem;
-    left: -10rem;
+    left: -7rem;
 }
 
 .sct_5 .box .card div img {
@@ -540,7 +539,10 @@
     flex-direction: column;
     justify-content: center;
     padding: 6rem 0;
+    /* transform: translateX(4rem); */
+    margin-left: 4rem;
     gap: 3.2rem;
+    overflow: hidden;
 }
 
 .sct_6 .main_h1 {
@@ -574,13 +576,17 @@
 
 .sct_6 .box {
     width: 100%;
+    max-width: 104rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .sct_6 .box .card {
     width: 100%;
     display: flex;
+    /* justify-content: space-between; */
     gap: 1.2rem;
 }
 
@@ -801,7 +807,6 @@
     color: var(--text-color-def);
     font-size: 2.4rem;
     font-weight: var(--bold-weight);
-    margin-top: 4.4rem;
 }
 
 .another-case-list .sct_7_btn:hover {
@@ -816,6 +821,7 @@
     background: #F2FBFF;
     display: flex;
     flex-direction: column;
+    gap: 3.2rem;
     align-items: center;
     justify-content: center;
 }
@@ -889,7 +895,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 1rem;
+    /* padding: 1rem; */
     gap: 1.2rem;
 }
 
@@ -954,7 +960,7 @@
 
 .main-box-another-webinars .sct_8_btn {
     width: fit-content;
-    margin: 4.4rem auto 0;
+    margin: 0 auto;
     background: var(--color-btn);
     border-radius: var(--border-radius);
     padding: 1.2rem 6.4rem;
@@ -1205,11 +1211,11 @@
 @media(max-width: 1440px) {
     .sct_5 .box .card:nth-child(even) {
         align-self: flex-end;
-        padding: 5rem 20rem 5rem 25rem;
+        padding: 5rem 20rem 10rem 25rem;
     }
     .sct_5 .box .card:nth-child(odd) {
         align-self: flex-start;
-        padding: 5rem 25rem 5rem 20rem;
+        padding: 5rem 25rem 10rem 20rem;
     }
     .sct_5 .box .card div {
         width: 30rem;
@@ -1217,11 +1223,11 @@
     }
     .sct_5 .box .card:nth-child(odd) div {
         top: -4rem;
-        right: -10rem;
+        right: -7rem;
     }
     .sct_5 .box .card:nth-child(even) div {
         top: -4rem;
-        left: -10rem;
+        left: -7rem;
     }
     .sct_5 .box .card div img {
         width: 100%;
@@ -1329,7 +1335,7 @@
         height: 30rem;
     }
 }
-@media(max-width: 425px){
+@media(max-width: 500px){
     .sct_6 .box .card {
         flex-direction: column;
     }
