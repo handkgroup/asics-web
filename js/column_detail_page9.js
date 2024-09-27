@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </svg>
     `;
 
-    const paragraphs = pathsContainer.querySelectorAll('p');
+    const paragraphs = pathsContainer.querySelectorAll('a');
 
     paragraphs.forEach((p, index) => {
         if (index < paragraphs.length - 1) {

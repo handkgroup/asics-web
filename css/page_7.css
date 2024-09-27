@@ -18,10 +18,10 @@
     padding: 1.2rem 0px 1.2rem 10rem;
     gap: .4rem;
     background: #F6F6F6;
-    margin-top: 6.65rem;
+    margin-top: 7.8rem;
 }
 
-.column-detail-paths p {
+.column-detail-paths a {
     color: var(--Black, #000);
     text-align: center;
     font-size: 12px;
