@@ -47,6 +47,8 @@ span {
   float: right;
   position: sticky;
   top: 12%;
+  display: flex;
+  flex-direction: column;
   margin: 3.3rem 0;
   right: 13.8%;
   width: 30rem;
@@ -57,14 +59,14 @@ span {
   z-index: 10;
 }
 
-.sticky_card h6 {
+.sticky_card .h6_size {
   color: var(--primary-color);
   font-family: var(--font-family);
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-.sticky_card p {
+.sticky_card .p_size {
   color: var(--primary-color);
   font-family: var(--font-family);
   font-size: 1.6rem;
@@ -73,7 +75,7 @@ span {
   margin-top: 1.6rem;
 }
 
-.sticky_card div span {
+.sticky_card div .span_size {
   color: var(--primary-color);
   font-family: var(--font-family);
   font-size: 1.2rem;
@@ -88,7 +90,7 @@ span {
   padding: 0 3.4rem;
 }
 
-.sticky_card h5 {
+.sticky_card .h5_size {
   color: var(--primary-color);
   font-family: var(--font-family);
   font-size: 1.6rem;
@@ -97,7 +99,7 @@ span {
   margin-top: 1.6rem;
 }
 
-.sticky_card h5 span {
+.sticky_card .h5-span_size {
   display: block;
   color: var(--primary-color);
   font-family: var(--font-family);
