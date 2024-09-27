@@ -12,7 +12,7 @@
     color: #ffffff;
     text-align: center;
     font-family: var(--font-family);
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: 160%;
@@ -41,7 +41,7 @@
     gap: 3rem;
 }
 
-.main-h1{
+.main-h1 p{
     color: var(--primary-color);
     display: flex;
     flex-direction: column;

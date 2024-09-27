@@ -56,8 +56,8 @@
     <div class="h-cta-main">
         <img class="h-cta-img" src="../assets/images/cta_3-bg (1).jpeg" alt="photo">
         <div class="h-cta-paths">
-            <p>TOP</p>
-            <p>会社概要</p>
+            <a href="./top_page.html">TOP</a>
+            <a href="./page_3.html">会社概要</a>
         </div>
         <div class="h-cta-title">
             <h1>導入事例</h1>
@@ -76,17 +76,16 @@
                 <span>お断りさせていただく場合がございます。</span>
                 <span>※個人の方はご利用になれません。</span>
             </h3>
-            <form>
-               
+            <form id="application-form">
+                <!-- Input groups -->
                 <div class="input-group">
                     <label for="company-info">企業名 </label>
                     <input type="text" id="company-info" placeholder="株式会社 ASICS">
                 </div>
                 <div class="input-group">
                     <label for="company-info">部署名</label>
-                    <input type="text" id="company-info" placeholder="営業">
+                    <input type="text" id="department-info" placeholder="営業">
                 </div>
-                
                 <div class="row">
                     <div class="input-group half-width">
                         <label for="last-name">姓</label>
@@ -97,30 +96,29 @@
                         <input type="text" id="first-name" placeholder="山田">
                     </div>
                 </div>
-    
-                
                 <div class="input-group">
                     <label for="email">メールアドレス</label>
                     <input type="email" id="email" placeholder="example@mail.com">
                 </div>
-    
-                
                 <div class="input-group">
                     <label for="phone">電話番号（ハイフンなし）</label>
                     <input type="text" id="phone" placeholder="0783036888">
                 </div>
-    
-
+                
                 <div class="final_input">
                     <h5>個人情報の取り扱い</h5>
-                    <input type="checkbox" id="radio5" name="inquiry" value="others" class="custom-radio">
-                    
-                    <label for="radio5"> <img src="../assets/icons/check.svg" alt="#">個人情報の取扱いに同意する</label>
+                    <input type="checkbox" id="privacy-checkbox" name="inquiry" value="others" class="custom-radio">
+                    <label for="privacy-checkbox"> 
+                        <img src="../assets/icons/tick-square-empty.svg" alt="#" class="empty">
+                        <img src="../assets/icons/tick-square.svg" alt="#" class="ticked">
+                        個人情報の取扱いに同意する
+                    </label>
+                    <!-- Error message -->
+                    <p class="error-message" id="error-message">個人情報の取扱いに同意してください。</p>
                 </div>
-    
                 
-                <a href="" class="btn">送信する</a>
-        
+                <button type="button" class="btn" id="submit-btn">送信する</button>
+            </form>
         </div>
 
 
@@ -151,10 +149,10 @@
         <section class="sct_2 for_padding">
             <div class="wrapper">
                 <div class="top_btn">
-                    <a href="">オンライン</a>
-                    <a href="">対面</a>
+                    <button type="button" class="online_event-btn active">オンライン</button>
+                    <button type="button" class="face-to-face_event-btn">対面</button>
                 </div>
-                <div class="box">
+                <div class="box online_event">
                     <div class="card_1">
                         <ul>
                             <li>
@@ -266,8 +264,8 @@
                             </dl>
                             <dl>
                                 <dt>場所</dt>
-                                <dd>東武トップツアーズ株式会社　東京法人中央事業部
-                                    〒108-0075　東京都港区港南1-8-15 Wビル 19F　
+                                <dd>東武トップツアーズ株式会社　東京法人中央事業部 <br>
+                                    〒108-0075　東京都港区港南1-8-15 Wビル 19F　<br>
                                     品川駅　港南口より徒歩約7分</dd>
                             </dl>
                             <dl>
@@ -283,8 +281,8 @@
                             </dl>
                             <dl>
                                 <dt>場所</dt>
-                                <dd>東武トップツアーズ株式会社　東京法人中央事業部
-                                    〒108-0075　東京都港区港南1-8-15 Wビル 19F　
+                                <dd>東武トップツアーズ株式会社　東京法人中央事業部<br>
+                                    〒108-0075　東京都港区港南1-8-15 Wビル 19F　<br>
                                     品川駅　港南口より徒歩約7分</dd>
                             </dl>
                             <dl>
@@ -300,8 +298,165 @@
                             </dl>
                             <dl>
                                 <dt>場所</dt>
-                                <dd>東武トップツアーズ株式会社　東京法人中央事業部
-                                    〒108-0075　東京都港区港南1-8-15 Wビル 19F　
+                                <dd>東武トップツアーズ株式会社　東京法人中央事業部<br>
+                                    〒108-0075　東京都港区港南1-8-15 Wビル 19F　<br>
+                                    品川駅　港南口より徒歩約7分</dd>
+                            </dl>
+                            <dl>
+                                <dt>定員</dt>
+                                <dd>5名</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="box face-to-face_event">
+                    <div class="card_1">
+                        <ul>
+                            <li>
+                                <div class="left_card">
+                                    <img src="../assets/icons/page_3.svg" alt="" class="icons">
+                                    <span></span>
+                                </div>
+                                <div class="right_card">
+                                    <h5>Step 1</h5>
+                                    <div class="content">
+                                        <div class="for_img">
+                                            <img src="../assets/images/ahcc_cta.png" alt="カウンセリング・診療">
+                                        </div>
+                                        <div class="for_txt">
+                                            <h4>お問い合わせ</h4>
+                                            <p >右のお問い合わせフォームから、必要項目をご入力の上、お問い合わせください。
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left_card">
+                                    <img src="../assets/icons/page_3.svg" alt="" class="icons">
+                                    <span></span>
+                                </div>
+                                <div class="right_card">
+                                    <h5>Step 2</h5>
+                                    <div class="content">
+                                        <div class="for_img">
+                                            <img src="../assets/images/ahcc_cta.png" alt="カウンセリング・診療">
+                                        </div>
+                                        <div class="for_txt">
+                                            <h4>お問い合わせ</h4>
+                                            <p >右のお問い合わせフォームから、必要項目をご入力の上、お問い合わせください。
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left_card">
+                                    <img src="../assets/icons/page_3.svg" alt="" class="icons">
+                                    <span></span>
+                                </div>
+                                <div class="right_card">
+                                    <h5>Step 3</h5>
+                                    <div class="content">
+                                        <div class="for_img">
+                                            <img src="../assets/images/ahcc_cta.png" alt="カウンセリング・診療">
+                                        </div>
+                                        <div class="for_txt">
+                                            <h4>お問い合わせ</h4>
+                                            <p >右のお問い合わせフォームから、必要項目をご入力の上、お問い合わせください。
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left_card">
+                                    <img src="../assets/icons/page_3.svg" alt="" class="icons">
+                                    <span></span>
+                                </div>
+                                <div class="right_card">
+                                    <h5>Step 4</h5>
+                                    <div class="content">
+                                        <div class="for_img">
+                                            <img src="../assets/images/ahcc_cta.png" alt="カウンセリング・診療">
+                                        </div>
+                                        <div class="for_txt">
+                                            <h4>お問い合わせ</h4>
+                                            <p >右のお問い合わせフォームから、必要項目をご入力の上、お問い合わせください。
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left_card">
+                                    <img src="../assets/icons/page_3.svg" alt="" class="icons">
+                                    <span></span>
+                                </div>
+                                <div class="right_card">
+                                    <h5>Step 5</h5>
+                                    <div class="content">
+                                        <div class="for_img">
+                                            <img src="../assets/images/ahcc_cta.png" alt="カウンセリング・診療">
+                                        </div>
+                                        <div class="for_txt">
+                                            <h4>お問い合わせ</h4>
+                                            <p >右のお問い合わせフォームから、必要項目をご入力の上、お問い合わせください。
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="card_2">
+                        <h5>開催日程</h5>
+                        <div class="content">
+                            <h4>2024年5月16日（木）</h4>
+                            <dl>
+                                <dt>時間</dt>
+                                <dd>①10:00-12:00②13:00-15:00</dd>
+                            </dl>
+                            <dl>
+                                <dt>場所</dt>
+                                <dd>東武トップツアーズ株式会社　東京法人中央事業部 <br>
+                                    〒108-0075　東京都港区港南1-8-15 Wビル 19F　 <br>
+                                    品川駅　港南口より徒歩約7分</dd>
+                            </dl>
+                            <dl>
+                                <dt>定員</dt>
+                                <dd>5名</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <h4>2024年5月16日（木）</h4>
+                            <dl>
+                                <dt>時間</dt>
+                                <dd>①10:00-12:00②13:00-15:00</dd>
+                            </dl>
+                            <dl>
+                                <dt>場所</dt>
+                                <dd>東武トップツアーズ株式会社　東京法人中央事業部 <br>
+                                    〒108-0075　東京都港区港南1-8-15 Wビル 19F　<br>
+                                    品川駅　港南口より徒歩約7分</dd>
+                            </dl>
+                            <dl>
+                                <dt>定員</dt>
+                                <dd>5名</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <h4>2024年5月16日（木）</h4>
+                            <dl>
+                                <dt>時間</dt>
+                                <dd>①10:00-12:00②13:00-15:00</dd>
+                            </dl>
+                            <dl>
+                                <dt>場所</dt>
+                                <dd>東武トップツアーズ株式会社　東京法人中央事業部 <br>
+                                    〒108-0075　東京都港区港南1-8-15 Wビル 19F　<br>
                                     品川駅　港南口より徒歩約7分</dd>
                             </dl>
                             <dl>
@@ -370,6 +525,8 @@
 
     <script src="../js/header.js"></script>
     <script src="../js/cta_header.js"></script>
+    <script src="../js/error_message.js"></script>
+    <script src="../js/page-3_section2.js"></script>
 </body>
 
 </html>

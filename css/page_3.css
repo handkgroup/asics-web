@@ -46,14 +46,15 @@ span {
 .sticky_card {
     float: right;
     position: sticky;
-    top: 10%;
+    top: 13.5%;
     margin: 3.3rem 0;
     right: 13.8%;
     width: 30rem;
     padding: 2.4rem;
-    border-radius: 10px;
+    border-radius: 1rem;
+    border: .2rem solid var(--gray, #B6B6B6);
     background: #F6F6F6;
-    box-shadow: -1px 0px 16px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: -.1rem 0 1.6rem 0 rgba(0, 0, 0, 0.10);
     z-index: 10;
 }
 
@@ -160,9 +161,21 @@ span {
     border-radius: .1rem;
     transition: background 0.3s;
 }
-.final_input .custom-radio:checked + label img {
-    transform: scale(1);
-    background: #B6B6B6;
+.final_input .custom-radio + label .ticked{
+    display: none;
+}
+.final_input .custom-radio:checked + label .ticked {
+    display: inline-block;
+}
+.final_input .custom-radio:checked + label .empty {
+    display: none;
+}
+
+.final_input .error-message {
+    color: red;
+    font-size: 1.4rem;
+    display: none; /* Hidden initially */
+    margin-top: 0.8rem;
 }
 
 
@@ -171,6 +184,7 @@ span {
     margin: 0 auto;
     background: var(--color-btn);
     border-radius: var(--border-radius);
+    border: none;
     padding: 1.2rem 9rem;
     font-family: var(--font-family);
     color: var(--text-color-def);
@@ -180,7 +194,7 @@ span {
 
 .btn:hover {
     background-color: var(--hover-dark);
-    transform: scale(1.05);
+    cursor: pointer;
 }
 
 
@@ -231,15 +245,31 @@ span {
     display: flex;
     gap: 1.2rem;
 }
+.sct_2 > .wrapper{
+    border-radius: 1rem;
+    border: .1rem solid var(--Primary-color, #001E62);
+}
 
-.sct_2 .top_btn a {
+.sct_2 .top_btn .online_event-btn, 
+.sct_2 .top_btn .face-to-face_event-btn {
     width: 50%;
     color: var(--Black, #000);
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
     padding: 3rem 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
+
+.sct_2 .top_btn .online_event-btn.active,
+.sct_2 .top_btn .face-to-face_event-btn.active{
+    border-radius: 2rem;
+    background: var(--Primary-color, #001E62);
+    color: #fff;
+}
+
 
 .sct_2 .top_btn a:hover {
     border-radius: 2rem;
@@ -250,6 +280,10 @@ span {
 .sct_2 .box {
     width: 100%;
     padding: 3rem;
+}
+
+.sct_2 .face-to-face_event{
+    display: none;
 }
 
 .sct_2 .box .card_1 {
@@ -402,8 +436,8 @@ span {
     .sticky_card {
       float: right;
       position: sticky;
-      top: 10%;
-      margin: 3.3rem 3.3rem 0 0 ;
+      top: 13.5%;
+      margin: 3.3rem 3.3rem 2rem 0 ;
       right: 0;
       width: 30rem;
     }
