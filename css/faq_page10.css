@@ -25,22 +25,25 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-.faq_filter select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+.faq_filter .select-btn{
     background: url('../assets/icons/dropdown_icon.svg') no-repeat right center;
     padding: 1.2rem 2rem;  
     background-repeat: no-repeat;
     background-position: right 2rem center;
     border: 1px solid #D1D1D1;
     background-color: #F1F7FB;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: #000;
 }
 
-.faq_filter select option{
+/* .faq_filter select option{
     font-size: 2rem;
     font-weight: 700;
-}
+    background-color: red;
+} */
 
 .faq_body{
     display: flex;
