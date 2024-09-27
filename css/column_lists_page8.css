@@ -263,7 +263,7 @@
     gap: 8px;
 }
 
-.item-links-column a {
+.item-links-column span {
     min-width: fit-content;
     display: flex;
     padding: .4rem .8rem;
