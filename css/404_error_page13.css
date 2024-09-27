@@ -9,7 +9,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 15rem;
+    margin-top: 7.8rem;
+    padding-top: 10rem;
     padding-bottom: 10rem;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.20);
@@ -93,6 +94,9 @@
     font-weight: 700;
     line-height: 160%;
     min-width: fit-content;
+}
+.error-title a:hover{
+    background-color: var(--hover-dark);
 }
 .footer-error-page {
     height: 30vh;
